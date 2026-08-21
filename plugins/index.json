@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-21T02:23:27.864Z",
-  "total": 93,
+  "updatedAt": "2026-08-21T06:44:16.101Z",
+  "total": 94,
   "official": [
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-cut",
@@ -8,6 +8,7 @@
     "@xpert-ai/plugin-drawio",
     "@xpert-ai/plugin-excalidraw",
     "@xpert-ai/plugin-lucidchart",
+    "@xpert-ai/plugin-office-cli",
     "@xpert-ai/plugin-office-editor",
     "@xpert-ai/plugin-pencil",
     "@xpert-ai/plugin-presentation-studio",
@@ -1262,6 +1263,190 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
       "updatedAt": "2026-06-15T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-office-cli",
+      "packageName": "@xpert-ai/plugin-office-cli",
+      "version": "0.2.0",
+      "displayName": {
+        "en_US": "OfficeCLI",
+        "zh_Hans": "OfficeCLI 原生 Office"
+      },
+      "description": {
+        "en_US": "Visual OfficeCLI app for native DOCX, XLSX, and PPTX creation, structural editing, rendering, validation, immutable versions, and Agent workflows.",
+        "zh_Hans": "基于 OfficeCLI 的可视化原生 Office 应用，支持 DOCX、XLSX、PPTX 创建、结构化编辑、渲染、验证、不可变版本和 Agent 工作流。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "keywords": [
+        "officecli",
+        "office",
+        "docx",
+        "xlsx",
+        "pptx",
+        "document-automation",
+        "native-rendering",
+        "file-versioning",
+        "workbench",
+        "assistant-template",
+        "data-xpert"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/office-cli"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/office-cli",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"OfficeCLI\"><rect x=\"6\" y=\"6\" width=\"52\" height=\"52\" rx=\"14\" fill=\"#e5484d\"/><path d=\"M18 18h20l8 8v20H18z\" fill=\"#fff\" opacity=\".96\"/><path d=\"M38 18v10h10\" fill=\"none\" stroke=\"#e5484d\" stroke-width=\"3\"/><path d=\"M24 34h16M24 40h12\" stroke=\"#e5484d\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>",
+        "color": "#e5484d"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-office-cli",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-office-cli"
+      },
+      "license": "AGPL-3.0",
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "assistant-template",
+            "skill",
+            "app",
+            "xpertai-bundle"
+          ],
+          "capabilities": [
+            "office-cli",
+            "office-cli-workbench",
+            "office-cli-agent-editing",
+            "office-cli-native-rendering",
+            "office-cli-file-versioning"
+          ],
+          "marketplace": {
+            "category": "productivity",
+            "contents": [
+              {
+                "type": "skill",
+                "name": "officecli",
+                "displayName": "OfficeCLI Skill",
+                "description": "Workflow skill for native DOCX, XLSX, and PPTX creation, inspection, structural editing, rendering, and validation.",
+                "tags": [
+                  "skill",
+                  "officecli",
+                  "docx",
+                  "xlsx",
+                  "pptx"
+                ]
+              },
+              {
+                "type": "assistant-template",
+                "name": "office-cli-assistant",
+                "displayName": "OfficeCLI Assistant",
+                "description": "Assistant template for OfficeCLI-native document workflows."
+              },
+              {
+                "type": "app",
+                "name": "office-cli",
+                "displayName": "OfficeCLI",
+                "description": "Visual Workbench and Agent tools backed by the OfficeCLI document engine."
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool",
+            "business-app"
+          ],
+          "capabilities": [
+            "office-cli",
+            "office-cli-workbench",
+            "office-cli-agent-editing",
+            "office-cli-native-rendering",
+            "office-cli-file-versioning"
+          ],
+          "marketplace": {
+            "category": "productivity",
+            "contents": [
+              {
+                "type": "app",
+                "name": "office-cli",
+                "displayName": "OfficeCLI",
+                "description": "Create, inspect, visually select, structurally edit, validate, version, restore, and download native Office files.",
+                "icon": {
+                  "type": "svg",
+                  "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"OfficeCLI\"><rect x=\"6\" y=\"6\" width=\"52\" height=\"52\" rx=\"14\" fill=\"#e5484d\"/><path d=\"M18 18h20l8 8v20H18z\" fill=\"#fff\" opacity=\".96\"/><path d=\"M38 18v10h10\" fill=\"none\" stroke=\"#e5484d\" stroke-width=\"3\"/><path d=\"M24 34h16M24 40h12\" stroke=\"#e5484d\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg>",
+                  "color": "#e5484d"
+                },
+                "operations": [
+                  {
+                    "name": "create-native-office-files",
+                    "displayName": "Create native Office files",
+                    "description": "Create DOCX, XLSX, and PPTX files without requiring Microsoft Office.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "inspect-and-edit-office-structures",
+                    "displayName": "Inspect and edit Office structures",
+                    "description": "Use semantic DOM paths, batch operations, and advanced OOXML operations through OfficeCLI.",
+                    "access": "write"
+                  },
+                  {
+                    "name": "render-and-review-office-files",
+                    "displayName": "Render and review Office files",
+                    "description": "Render native files, select document elements visually, validate output, and restore immutable versions.",
+                    "access": "write"
+                  }
+                ]
+              },
+              {
+                "type": "view",
+                "name": "office_cli",
+                "displayName": "OfficeCLI Workbench",
+                "description": "Native Office preview, visual element selection, command editing, validation, versions, restore, and download."
+              },
+              {
+                "type": "tool",
+                "name": "OfficeCLIMiddleware",
+                "displayName": "OfficeCLI Agent Tools",
+                "description": "Assistant middleware tools for complete OfficeCLI document workflows."
+              },
+              {
+                "type": "assistant-template",
+                "name": "office-cli-assistant",
+                "displayName": "OfficeCLI Assistant Template",
+                "description": "Prebuilt Assistant template for native OfficeCLI workflows."
+              }
+            ],
+            "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/office-cli#readme",
+            "updatedAt": "2026-07-24T00:00:00.000Z"
+          },
+          "runtime": {
+            "middlewareProviders": [
+              "OfficeCLIMiddleware"
+            ],
+            "viewProviders": [
+              "office-cli-view-provider"
+            ],
+            "templateProviders": [
+              "office-cli-template-provider"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/office-cli#readme",
+      "updatedAt": "2026-07-24T00:00:00.000Z",
       "verified": true
     },
     {
