@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-12T09:50:40.779Z",
-  "total": 92,
+  "updatedAt": "2026-08-21T02:23:27.864Z",
+  "total": 93,
   "official": [
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-cut",
@@ -73,6 +73,7 @@
     "@xpert-ai/plugin-vllm",
     "@xpert-ai/plugin-volcengine",
     "@xpert-ai/plugin-xinference",
+    "@xpert-ai/plugin-xirang",
     "@xpert-ai/plugin-zhipuai",
     "@xpert-ai/plugin-motion",
     "@xpert-ai/plugin-mysql",
@@ -4945,6 +4946,53 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/xinference/README.md",
       "updatedAt": "2025-11-10T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-xirang",
+      "displayName": {
+        "en_US": "Tianyi Cloud Xirang Model Provider",
+        "zh_Hans": "天翼云星辰模型提供商"
+      },
+      "description": {
+        "en_US": "Connects Xpert to Tianyi Cloud Xirang MaaS for OpenAI-compatible language, embedding, rerank, and image models.",
+        "zh_Hans": "通过天翼云星辰 MaaS 的兼容 OpenAI API 接入文本、向量、重排和图片模型。"
+      },
+      "version": "0.0.0",
+      "category": "model",
+      "keywords": [
+        "tianyi-cloud",
+        "xirang",
+        "ctyun",
+        "model",
+        "llm"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"m12 2 9 5v10l-9 5-9-5V7l9-5Zm0 2.3L5.4 8 12 11.7 18.6 8 12 4.3Zm-7 5.4v6.1l6 3.33v-6.1l-6-3.33Zm8 3.33v6.1l6-3.33V9.7l-6 3.33Z\" fill=\"currentColor\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-xirang"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "model"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/models/xirang/README.md",
+      "updatedAt": "2026-08-21T02:06:16Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-zhipuai",
