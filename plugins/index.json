@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-26T06:49:25.765Z",
-  "total": 95,
+  "updatedAt": "2026-08-26T06:49:40.374Z",
+  "total": 96,
   "official": [
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-cut",
@@ -42,6 +42,7 @@
     "@xpert-ai/plugin-clarification",
     "@xpert-ai/plugin-context-editing",
     "@xpert-ai/plugin-dangling-tool-call",
+    "@xpert-ai/plugin-dingtalk-connector",
     "@xpert-ai/plugin-file-memory",
     "@xpert-ai/plugin-github-connector",
     "@xpert-ai/plugin-lark-cli",
@@ -3708,6 +3709,61 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/dangling-tool-call/README.md",
       "updatedAt": "2026-04-12T06:29:49.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-dingtalk-connector",
+      "packageName": "@xpert-ai/plugin-dingtalk-connector",
+      "version": "0.1.1",
+      "displayName": {
+        "en_US": "DingTalk Connector",
+        "zh_Hans": "钉钉连接器"
+      },
+      "description": {
+        "en_US": "Connects a workspace to DingTalk with OAuth using the configured system integration.",
+        "zh_Hans": "使用系统集成中配置的钉钉应用，通过 OAuth 将工作区连接到钉钉。"
+      },
+      "level": "organization",
+      "category": "middleware",
+      "keywords": [
+        "dingtalk",
+        "connector",
+        "oauth",
+        "middleware"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/middlewares/dingtalk-connector"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/middlewares/dingtalk-connector",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 64 64\" role=\"img\" aria-label=\"DingTalk\"><circle cx=\"32\" cy=\"32\" r=\"30\" fill=\"#4aa4f8\"/><path d=\"M45.8 25.1c-.1.6-.5 1.6-1.1 2.8l-.1.2c-3.1 6.6-11.2 19.5-11.2 19.5l-2.4 8.2 7.7-9.8h-4.8l2.9-9.6c-2.5.6-5.5 1.5-9 2.6 0 0-4.8 2.8-13.8-5.4 0 0-6.1-5.3-2.5-6.7 1.5-.6 7.3-1.3 11.8-1.9 6.1-.8 9.9-1.3 9.9-1.3s-16.8-2.5-21.3-4.8c-2.1-1.1-6.2-8.1-5.7-13.1 0 0 .2-1.3 1.9-.9 0 0 23.5 10.7 39.6 16.5 4.8 1.7 8.9 2.7 8.1 5.7Z\" fill=\"#fff\"/></svg>",
+        "color": "#4aa4f8"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-dingtalk-connector",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-dingtalk-connector"
+      },
+      "license": "AGPL-3.0",
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "communication",
+            "subcategory": "middleware"
+          }
+        }
+      },
+      "updatedAt": "2026-08-26T06:17:11Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-file-memory",
