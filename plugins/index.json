@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-21T06:44:16.101Z",
-  "total": 94,
+  "updatedAt": "2026-08-26T06:49:25.765Z",
+  "total": 95,
   "official": [
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-cut",
@@ -55,6 +55,7 @@
     "@xpert-ai/plugin-tool-retry",
     "@xpert-ai/plugin-view-image",
     "@xpert-ai/plugin-web-tools",
+    "@xpert-ai/plugin-wecom-connector",
     "@xpert-ai/plugin-milvus",
     "@xpert-ai/plugin-mineru",
     "@xpert-ai/plugin-anthropic",
@@ -4301,6 +4302,53 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/web-tools/README.md",
       "updatedAt": "2026-02-27T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-wecom-connector",
+      "displayName": {
+        "en_US": "WeCom Connector",
+        "zh_Hans": "企业微信连接器"
+      },
+      "description": {
+        "en_US": "Connects a workspace to WeCom with QR authorization and securely injects user credentials into sandboxed commands.",
+        "zh_Hans": "通过扫码授权将工作区连接到企业微信，并将用户凭证安全注入沙箱命令。"
+      },
+      "version": "0.2.0",
+      "category": "middleware",
+      "keywords": [
+        "wecom",
+        "enterprise wechat",
+        "connector",
+        "oauth",
+        "qr",
+        "middleware"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": "https://github.com/xpert-ai/xpert-plugins",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 96 96\" fill=\"none\"><rect width=\"96\" height=\"96\" rx=\"24\" fill=\"#07C160\"/><path fill=\"#fff\" d=\"M23 32.5c0-4.1 3.4-7.5 7.5-7.5h35c4.1 0 7.5 3.4 7.5 7.5v20c0 4.1-3.4 7.5-7.5 7.5H40l-10.2 8.8c-1.3 1.1-3.3.1-3.3-1.6V60h-4c-4.1 0-7.5-3.4-7.5-7.5v-20Zm16 4.5a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm18 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-9 0a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-wecom-connector"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "communication",
+            "subcategory": "middleware"
+          }
+        }
+      },
+      "updatedAt": "2026-08-25T07:39:13.534Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-milvus",
