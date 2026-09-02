@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T01:13:32.550Z",
+  "updatedAt": "2026-09-02T07:02:48.433Z",
   "total": 103,
   "official": [
     "@xpert-ai/plugin-canvas",
@@ -3722,7 +3722,7 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "productivity",
+            "category": "communication",
             "subcategory": "middleware"
           }
         }
@@ -3978,7 +3978,7 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "productivity",
+            "category": "communication",
             "subcategory": "middleware"
           }
         }
@@ -4371,7 +4371,7 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "productivity",
+            "category": "communication",
             "subcategory": "middleware"
           }
         }
@@ -4533,7 +4533,7 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "productivity",
+            "category": "communication",
             "subcategory": "middleware"
           }
         }
@@ -4818,7 +4818,7 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "productivity",
+            "category": "communication",
             "subcategory": "middleware"
           }
         }
