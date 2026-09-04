@@ -1,0 +1,58 @@
+{
+  "name": "@xpert-ai/plugin-amap-connector",
+  "packageName": "@xpert-ai/plugin-amap-connector",
+  "version": "0.1.1",
+  "displayName": {
+    "en_US": "AMap Connector",
+    "zh_Hans": "高德地图连接器"
+  },
+  "description": {
+    "en_US": "Connect Xpert Agents to the official AMap Web Service API with bounded geocoding, POI, route, distance, weather, and location tools.",
+    "zh_Hans": "通过受限的地理编码、POI、路线、距离、天气和位置工具，将 Xpert 智能体连接到高德地图官方 Web Service API。"
+  },
+  "level": "organization",
+  "category": "middleware",
+  "keywords": [
+    "amap",
+    "gaode",
+    "map",
+    "geocoding",
+    "poi",
+    "route",
+    "weather",
+    "connector"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/middlewares/amap-connector"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/middlewares/amap-connector",
+  "icon": {
+    "type": "image",
+    "value": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/middlewares/amap-connector/assets/amap.png"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-amap-connector",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-amap-connector"
+  },
+  "license": "AGPL-3.0",
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "communication",
+        "subcategory": "middleware"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/amap-connector/README.md",
+  "updatedAt": "2026-08-31T02:47:22.812Z"
+}

@@ -1,0 +1,57 @@
+{
+  "name": "@xpert-ai/plugin-zsxq-connector",
+  "packageName": "@xpert-ai/plugin-zsxq-connector",
+  "version": "0.2.0",
+  "displayName": {
+    "en_US": "Knowledge Planet Connector",
+    "zh_Hans": "知识星球连接器"
+  },
+  "description": {
+    "en_US": "Connect Xpert Agents to Knowledge Planet through device OAuth and bounded account, group, topic, comment, hashtag, footprint, and note tools.",
+    "zh_Hans": "通过设备 OAuth 以及受限的账户、星球、主题、评论、标签、足迹和笔记工具，将 Xpert 智能体连接到知识星球。"
+  },
+  "level": "organization",
+  "category": "middleware",
+  "keywords": [
+    "zsxq",
+    "knowledge-planet",
+    "community",
+    "topics",
+    "comments",
+    "oauth",
+    "connector"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/middlewares/zsxq-connector"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/middlewares/zsxq-connector",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 96 96\" fill=\"none\"><rect width=\"96\" height=\"96\" rx=\"22\" fill=\"#F97316\"/><circle cx=\"48\" cy=\"48\" r=\"25\" fill=\"#FFF7ED\"/><path d=\"M48 26l5.4 15.6L70 48l-16.6 6.4L48 70l-5.4-15.6L26 48l16.6-6.4L48 26Z\" fill=\"#F97316\"/><circle cx=\"48\" cy=\"48\" r=\"6\" fill=\"#7C2D12\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-zsxq-connector",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-zsxq-connector"
+  },
+  "license": "AGPL-3.0",
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "communication",
+        "subcategory": "middleware"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/zsxq-connector/README.md",
+  "updatedAt": "2026-09-03T07:36:38.513Z"
+}

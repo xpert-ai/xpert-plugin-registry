@@ -1,0 +1,58 @@
+{
+  "name": "@xpert-ai/plugin-canva-connector",
+  "packageName": "@xpert-ai/plugin-canva-connector",
+  "version": "0.2.0",
+  "displayName": {
+    "en_US": "Canva Connector",
+    "zh_Hans": "Canva 连接器"
+  },
+  "description": {
+    "en_US": "Connect Xpert Agents to Canva through organization-managed OAuth and bounded design search, generation, editing, import, and export tools.",
+    "zh_Hans": "通过组织管理的 OAuth 以及受限的设计搜索、生成、编辑、导入和导出工具，将 Xpert 智能体连接到 Canva。"
+  },
+  "level": "organization",
+  "category": "middleware",
+  "keywords": [
+    "canva",
+    "design",
+    "mcp",
+    "oauth",
+    "pkce",
+    "import",
+    "export",
+    "connector"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/middlewares/canva-connector"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/middlewares/canva-connector",
+  "icon": {
+    "type": "image",
+    "value": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/middlewares/canva-connector/assets/canva-logo.png"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-canva-connector",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-canva-connector"
+  },
+  "license": "AGPL-3.0",
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "communication",
+        "subcategory": "middleware"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/canva-connector/README.md",
+  "updatedAt": "2026-09-03T03:15:29.448Z"
+}

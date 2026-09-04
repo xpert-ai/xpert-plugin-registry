@@ -1,0 +1,57 @@
+{
+  "name": "@xpert-ai/plugin-baidu-netdisk-connector",
+  "packageName": "@xpert-ai/plugin-baidu-netdisk-connector",
+  "version": "0.2.0",
+  "displayName": {
+    "en_US": "Baidu Netdisk Connector",
+    "zh_Hans": "百度网盘连接器"
+  },
+  "description": {
+    "en_US": "Connect Xpert Agents to Baidu Netdisk with tenant-managed OAuth, bounded file browsing and search, guarded file management, and Workspace Files uploads.",
+    "zh_Hans": "通过租户管理的 OAuth、受限的文件浏览与搜索、受保护的文件管理和工作区文件上传，将 Xpert 智能体连接到百度网盘。"
+  },
+  "level": "tenant",
+  "category": "middleware",
+  "keywords": [
+    "baidu",
+    "netdisk",
+    "cloud-storage",
+    "file-management",
+    "oauth",
+    "workspace-files",
+    "connector"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/middlewares/baidu-netdisk-connector"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/middlewares/baidu-netdisk-connector",
+  "icon": {
+    "type": "image",
+    "value": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/middlewares/baidu-netdisk-connector/assets/baidu-netdisk.png"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-baidu-netdisk-connector",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-baidu-netdisk-connector"
+  },
+  "license": "AGPL-3.0",
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "communication",
+        "subcategory": "middleware"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/baidu-netdisk-connector/README.md",
+  "updatedAt": "2026-09-03T03:09:11.505Z"
+}
