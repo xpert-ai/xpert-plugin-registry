@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-17T11:45:16.261Z",
-  "total": 110,
+  "updatedAt": "2026-09-17T12:37:08.589Z",
+  "total": 111,
   "official": [
     "@xpert-ai/plugin-anydoc",
     "@xpert-ai/plugin-canvas",
@@ -40,6 +40,7 @@
     "@xpert-ai/plugin-lark-sso",
     "@xpert-ai/plugin-lark",
     "@xpert-ai/plugin-wecom",
+    "@xpert-ai/plugin-jieba",
     "@xpert-ai/plugin-advisor",
     "@xpert-ai/plugin-amap-connector",
     "@xpert-ai/plugin-baidu-netdisk-connector",
@@ -3787,6 +3788,61 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/wecom/README.md",
       "updatedAt": "2026-03-16T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-jieba",
+      "packageName": "@xpert-ai/plugin-jieba",
+      "version": "0.1.1",
+      "displayName": {
+        "en_US": "Jieba",
+        "zh_Hans": "Jieba 中文分词"
+      },
+      "description": {
+        "en_US": "Chinese keyword search segmentation with support for mixed English text.",
+        "zh_Hans": "中文关键词检索分词，支持中英文混合文本。"
+      },
+      "level": "organization",
+      "category": "integration",
+      "keywords": [
+        "jieba",
+        "chinese",
+        "keyword",
+        "analyzer",
+        "knowledgebase"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "type": "git",
+        "directory": "xpertai/packages/jieba"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/packages/jieba",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 64 64\" fill=\"none\">\n  <rect width=\"64\" height=\"64\" rx=\"14\" fill=\"#0F766E\"/>\n  <path d=\"m30 12 4 5M17 22h30M24 22c3 9 10 15 21 18M41 22c-3 9-10 15-22 18\" stroke=\"#FFFFFF\" stroke-width=\"3.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n  <rect x=\"13\" y=\"48\" width=\"10\" height=\"5\" rx=\"2\" fill=\"#99F6E4\"/>\n  <rect x=\"27\" y=\"48\" width=\"10\" height=\"5\" rx=\"2\" fill=\"#FFFFFF\"/>\n  <rect x=\"41\" y=\"48\" width=\"10\" height=\"5\" rx=\"2\" fill=\"#99F6E4\"/>\n</svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-jieba",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-jieba"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "integration"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/packages/jieba/README.md",
+      "updatedAt": "2026-09-17T12:12:34.818Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-advisor",
