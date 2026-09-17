@@ -1,0 +1,194 @@
+{
+  "name": "@xpert-ai/plugin-db-studio",
+  "packageName": "@xpert-ai/plugin-db-studio",
+  "version": "0.1.0",
+  "displayName": {
+    "en_US": "DB Studio",
+    "zh_Hans": "DB Studio 数据库工作台"
+  },
+  "description": {
+    "en_US": "Governed database workbench and Agent tools for Apache Doris, MySQL and PostgreSQL.",
+    "zh_Hans": "面向 Apache Doris、MySQL 和 PostgreSQL 的数据库工作台与受控智能体工具。"
+  },
+  "level": "system",
+  "category": "middleware",
+  "keywords": [
+    "database",
+    "doris",
+    "mysql",
+    "postgresql",
+    "agentic-app"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/db-studio"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/db-studio",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"64\" height=\"64\" viewBox=\"0 0 64 64\"><rect width=\"64\" height=\"64\" rx=\"16\" fill=\"#146B5C\"/><g stroke=\"white\" stroke-width=\"3\" fill=\"none\"><ellipse cx=\"32\" cy=\"19\" rx=\"17\" ry=\"7\"/><path d=\"M15 19v25c0 9 34 9 34 0V19M15 31c0 9 34 9 34 0\"/></g></svg>",
+    "color": "#146B5C"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-db-studio",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-db-studio"
+  },
+  "targetApps": [
+    "data-xpert",
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "data-xpert": {
+      "types": [
+        "business-app",
+        "workbench-view",
+        "assistant-tool"
+      ],
+      "capabilities": [
+        "db-studio-explore",
+        "db-studio-changes",
+        "db-studio-transfer"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "app",
+            "name": "db-studio",
+            "displayName": "DB Studio",
+            "description": {
+              "en_US": "Develop and manage databases with an Agent",
+              "zh_Hans": "与智能体一起开发和管理数据库"
+            },
+            "appConfig": {
+              "scope": "organization",
+              "assistantTemplateKey": "db-studio-assistant",
+              "workspace": {
+                "mode": "dedicated",
+                "name": {
+                  "en_US": "DB Studio Workspace",
+                  "zh_Hans": "DB Studio 工作空间"
+                },
+                "sharing": "organization"
+              },
+              "modelRequirements": {
+                "primary": true
+              },
+              "presentation": {
+                "tagline": {
+                  "en_US": "Your database workspace, with an Agent",
+                  "zh_Hans": "数据库工作区，原生智能体协同"
+                },
+                "developer": "XpertAI",
+                "features": [
+                  {
+                    "key": "sql",
+                    "title": {
+                      "en_US": "SQL and objects",
+                      "zh_Hans": "SQL 与对象"
+                    },
+                    "description": {
+                      "en_US": "Query and inspect real metadata",
+                      "zh_Hans": "查询与真实结构元数据"
+                    }
+                  },
+                  {
+                    "key": "governance",
+                    "title": {
+                      "en_US": "Governed execution",
+                      "zh_Hans": "受控执行"
+                    },
+                    "description": {
+                      "en_US": "Frozen plans, scoped policies and durable receipts",
+                      "zh_Hans": "冻结计划、连接策略与执行回执"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "category": "data-analytics"
+      }
+    },
+    "xpert": {
+      "types": [
+        "business-app",
+        "workbench-view",
+        "assistant-tool"
+      ],
+      "capabilities": [
+        "db-studio-explore",
+        "db-studio-changes",
+        "db-studio-transfer"
+      ],
+      "marketplace": {
+        "contents": [
+          {
+            "type": "app",
+            "name": "db-studio",
+            "displayName": "DB Studio",
+            "description": {
+              "en_US": "Develop and manage databases with an Agent",
+              "zh_Hans": "与智能体一起开发和管理数据库"
+            },
+            "appConfig": {
+              "scope": "organization",
+              "assistantTemplateKey": "db-studio-assistant",
+              "workspace": {
+                "mode": "dedicated",
+                "name": {
+                  "en_US": "DB Studio Workspace",
+                  "zh_Hans": "DB Studio 工作空间"
+                },
+                "sharing": "organization"
+              },
+              "modelRequirements": {
+                "primary": true
+              },
+              "presentation": {
+                "tagline": {
+                  "en_US": "Your database workspace, with an Agent",
+                  "zh_Hans": "数据库工作区，原生智能体协同"
+                },
+                "developer": "XpertAI",
+                "features": [
+                  {
+                    "key": "sql",
+                    "title": {
+                      "en_US": "SQL and objects",
+                      "zh_Hans": "SQL 与对象"
+                    },
+                    "description": {
+                      "en_US": "Query and inspect real metadata",
+                      "zh_Hans": "查询与真实结构元数据"
+                    }
+                  },
+                  {
+                    "key": "governance",
+                    "title": {
+                      "en_US": "Governed execution",
+                      "zh_Hans": "受控执行"
+                    },
+                    "description": {
+                      "en_US": "Frozen plans, scoped policies and durable receipts",
+                      "zh_Hans": "冻结计划、连接策略与执行回执"
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        ],
+        "category": "data-analytics"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/db-studio/README.md",
+  "updatedAt": "2026-09-17T11:43:07.649Z"
+}
