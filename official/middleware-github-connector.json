@@ -37,7 +37,7 @@
     "xpert": {
       "marketplace": {
         "category": "developer-tools",
-        "subcategory": "middleware"
+        "subcategory": "connector"
       }
     }
   },

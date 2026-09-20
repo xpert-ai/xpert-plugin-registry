@@ -42,6 +42,17 @@ Fields in a single plugin object within `plugins`:
 
 ✅: Required; ⭕️: Optional but recommended.
 
+### Category Semantics
+
+The marketplace distinguishes two classification dimensions:
+
+- `targetAppMeta.xpert.marketplace.category`: **business category** shown as the top-level marketplace tab (e.g., `communication`, `productivity`, `finance`, `developer-tools`).
+- `targetAppMeta.xpert.marketplace.subcategory`: **technical category** used as a cross-tab filter (e.g., `connector`, `middleware`, `integration`, `database`, `model`).
+
+The top-level legacy `category` field describes the technical plugin type (e.g., `middleware`, `model`) and is only used as a fallback.
+
+For example, a DingTalk connector plugin uses `category: "communication"` (business) with `subcategory: "connector"` (technical).
+
 ## How to Submit a Plugin
 
 1. Fork this repository and create a new branch.

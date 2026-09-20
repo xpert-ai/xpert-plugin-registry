@@ -50,7 +50,7 @@
     "xpert": {
       "marketplace": {
         "category": "communication",
-        "subcategory": "middleware"
+        "subcategory": "connector"
       }
     }
   },
