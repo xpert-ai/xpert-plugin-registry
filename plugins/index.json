@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-17T12:37:08.589Z",
+  "updatedAt": "2026-09-20T03:48:42.996Z",
   "total": 111,
   "official": [
     "@xpert-ai/plugin-anydoc",
@@ -3941,8 +3941,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "travel",
+            "subcategory": "connector"
           }
         }
       },
@@ -3999,8 +3999,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "productivity",
+            "subcategory": "connector"
           }
         }
       },
@@ -4058,8 +4058,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "creativity",
+            "subcategory": "connector"
           }
         }
       },
@@ -4210,8 +4210,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "travel",
+            "subcategory": "connector"
           }
         }
       },
@@ -4317,7 +4317,7 @@
         "xpert": {
           "marketplace": {
             "category": "communication",
-            "subcategory": "middleware"
+            "subcategory": "connector"
           }
         }
       },
@@ -4409,7 +4409,7 @@
         "xpert": {
           "marketplace": {
             "category": "developer-tools",
-            "subcategory": "middleware"
+            "subcategory": "connector"
           }
         }
       },
@@ -4466,8 +4466,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "productivity",
+            "subcategory": "connector"
           }
         }
       },
@@ -4803,7 +4803,7 @@
         "xpert": {
           "marketplace": {
             "category": "communication",
-            "subcategory": "middleware"
+            "subcategory": "connector"
           }
         }
       },
@@ -4859,8 +4859,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "productivity",
+            "subcategory": "connector"
           }
         }
       },
@@ -4964,7 +4964,7 @@
         "xpert": {
           "marketplace": {
             "category": "communication",
-            "subcategory": "middleware"
+            "subcategory": "connector"
           }
         }
       },
@@ -5021,8 +5021,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "travel",
+            "subcategory": "connector"
           }
         }
       },
@@ -5250,7 +5250,7 @@
         "xpert": {
           "marketplace": {
             "category": "communication",
-            "subcategory": "middleware"
+            "subcategory": "connector"
           }
         }
       },
@@ -5306,8 +5306,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "productivity",
+            "subcategory": "connector"
           }
         }
       },
@@ -5364,8 +5364,8 @@
       "targetAppMeta": {
         "xpert": {
           "marketplace": {
-            "category": "communication",
-            "subcategory": "middleware"
+            "category": "education-research",
+            "subcategory": "connector"
           }
         }
       },
