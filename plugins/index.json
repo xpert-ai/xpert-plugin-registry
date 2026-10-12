@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-20T03:48:42.996Z",
-  "total": 111,
+  "updatedAt": "2026-10-12T04:54:58.634Z",
+  "total": 112,
   "official": [
     "@xpert-ai/plugin-anydoc",
     "@xpert-ai/plugin-canvas",
@@ -10,6 +10,7 @@
     "@xpert-ai/plugin-drawio",
     "@xpert-ai/plugin-excalidraw",
     "@xpert-ai/plugin-lucidchart",
+    "@xpert-ai/plugin-meetings",
     "@xpert-ai/plugin-office-cli",
     "@xpert-ai/plugin-office-editor",
     "@xpert-ai/plugin-pencil",
@@ -120,7 +121,6 @@
     {
       "name": "@xpert-ai/plugin-anydoc",
       "packageName": "@xpert-ai/plugin-anydoc",
-      "version": "0.0.1",
       "displayName": {
         "en_US": "AnyDoc",
         "zh_Hans": "AnyDoc 文档解析器"
@@ -637,7 +637,6 @@
     {
       "name": "@xpert-ai/plugin-db-studio",
       "packageName": "@xpert-ai/plugin-db-studio",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "DB Studio",
         "zh_Hans": "DB Studio 数据库工作台"
@@ -1532,9 +1531,240 @@
       "verified": true
     },
     {
+      "name": "@xpert-ai/plugin-meetings",
+      "packageName": "@xpert-ai/plugin-meetings",
+      "displayName": {
+        "en_US": "Meetings",
+        "zh_Hans": "会议记录"
+      },
+      "description": {
+        "en_US": "Private file-backed meeting notes for Xpert Desktop and the web Workbench, with recording, transcription, personal notes, evidence-backed minutes, and meeting recall.",
+        "zh_Hans": "面向 Xpert Desktop 和网页工作台的私有会议记录应用，以文件保存会议内容，支持录音、转写、个人笔记、有原文依据的纪要和会议回顾。"
+      },
+      "level": "system",
+      "artifactNamespace": "meetings",
+      "category": "middleware",
+      "keywords": [
+        "meetings",
+        "meeting-notes",
+        "recording",
+        "transcription",
+        "speech-to-text",
+        "minutes",
+        "meeting-recall",
+        "workbench",
+        "assistant-template",
+        "agentic-app"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/meetings"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/meetings",
+      "icon": {
+        "type": "image",
+        "value": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-icon-v1.png",
+        "alt": "Meetings"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-meetings",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-meetings"
+      },
+      "license": "AGPL-3.0",
+      "skills": "./skills/",
+      "assets": {
+        "logo": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-icon-v1.png",
+        "screenshots": [
+          "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-overview-zh-v1.png"
+        ]
+      },
+      "targetApps": [
+        "xpert",
+        "data-xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "business-app",
+            "workbench-view",
+            "assistant-template",
+            "assistant-tool",
+            "skill"
+          ],
+          "capabilities": [
+            "meetings.notes"
+          ],
+          "runtime": {
+            "middlewareProviders": [
+              "meetings.tools"
+            ],
+            "viewProviders": [
+              "meetings.provider"
+            ],
+            "templateProviders": [
+              "meetings.templates"
+            ]
+          },
+          "marketplace": {
+            "category": "productivity",
+            "contents": [
+              {
+                "type": "app",
+                "name": "meetings",
+                "displayName": "Meetings",
+                "description": {
+                  "en_US": "Private meeting notes in Xpert Desktop.",
+                  "zh_Hans": "在 Desktop 记录会议，整理笔记与后续事项。"
+                },
+                "icon": {
+                  "type": "image",
+                  "value": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-icon-v1.png",
+                  "alt": "Meetings"
+                },
+                "color": "#f59e0b",
+                "appConfig": {
+                  "scope": "organization",
+                  "assistantTemplateKey": "meetings-assistant",
+                  "workspace": {
+                    "mode": "dedicated",
+                    "name": {
+                      "en_US": "Meetings",
+                      "zh_Hans": "会议工作空间"
+                    },
+                    "sharing": "organization"
+                  },
+                  "knowledgebases": [],
+                  "modelRequirements": {
+                    "primary": true
+                  },
+                  "entry": {
+                    "type": "assistant-chat"
+                  },
+                  "presentation": {
+                    "tagline": {
+                      "en_US": "Stay in the conversation. Keep what matters.",
+                      "zh_Hans": "专注讨论，留下重点。"
+                    },
+                    "developer": "XpertAI",
+                    "screenshots": [
+                      "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-overview-zh-v1.png"
+                    ],
+                    "features": [
+                      {
+                        "key": "capture",
+                        "title": {
+                          "en_US": "Desktop recording",
+                          "zh_Hans": "桌面录音"
+                        },
+                        "description": {
+                          "en_US": "Manually record microphone and system audio on macOS 15+.",
+                          "zh_Hans": "在 macOS 15+ 手动记录麦克风与系统音频。"
+                        }
+                      },
+                      {
+                        "key": "notes",
+                        "title": {
+                          "en_US": "Notes and evidence",
+                          "zh_Hans": "笔记与原文依据"
+                        },
+                        "description": {
+                          "en_US": "Keep personal notes independent. Verify decisions and follow-ups against transcript excerpts.",
+                          "zh_Hans": "个人笔记独立保存，决策与后续事项可核对转写原文。"
+                        }
+                      },
+                      {
+                        "key": "recall",
+                        "title": {
+                          "en_US": "Find and prepare",
+                          "zh_Hans": "回顾与准备"
+                        },
+                        "description": {
+                          "en_US": "Search private meeting history and prepare for the next conversation.",
+                          "zh_Hans": "搜索自己的会议记录，回顾承诺并准备下一次讨论。"
+                        }
+                      }
+                    ],
+                    "dataScope": {
+                      "en_US": "Meeting content is private to each user in the current organization. Files are kept in the administrator-configured data directory.",
+                      "zh_Hans": "会议内容按当前组织中的用户隔离，以文件保存到管理员配置的持久目录。"
+                    },
+                    "initializationSummary": {
+                      "en_US": "Creates a workspace and Assistant. Configure speech-to-text on the Assistant and the primary chat model on the Assistant before recording.",
+                      "zh_Hans": "创建工作空间和会议助手。录音前需为助手配置语音转写模型，并配置助手的主对话模型。"
+                    }
+                  }
+                }
+              },
+              {
+                "type": "view",
+                "name": "meetings.workspace",
+                "displayName": {
+                  "en_US": "Meetings",
+                  "zh_Hans": "会议记录"
+                },
+                "description": "Record meetings and review notes in the Desktop plugin view."
+              },
+              {
+                "type": "middleware",
+                "name": "meetings.tools",
+                "displayName": "Meetings tools",
+                "description": "Search private meetings and review follow-ups."
+              },
+              {
+                "type": "assistant-template",
+                "name": "meetings-assistant",
+                "displayName": {
+                  "en_US": "Meetings Assistant",
+                  "zh_Hans": "会议助手"
+                },
+                "description": {
+                  "en_US": "Record meetings and review decisions and follow-ups.",
+                  "zh_Hans": "记录会议，回顾决策与后续事项。"
+                },
+                "metadata": {
+                  "app": "meetings"
+                }
+              },
+              {
+                "type": "skill",
+                "name": "meeting-recall",
+                "displayName": "Meeting recall",
+                "description": "Review commitments and prepare one-on-ones using private meeting evidence."
+              }
+            ]
+          }
+        },
+        "data-xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool"
+          ],
+          "capabilities": [
+            "meetings.notes"
+          ],
+          "runtime": {
+            "middlewareProviders": [
+              "meetings.tools"
+            ],
+            "viewProviders": [
+              "meetings.provider"
+            ]
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/meetings/README.md",
+      "updatedAt": "2026-10-12T00:00:00.000Z",
+      "verified": true
+    },
+    {
       "name": "@xpert-ai/plugin-office-cli",
       "packageName": "@xpert-ai/plugin-office-cli",
-      "version": "0.2.0",
       "displayName": {
         "en_US": "OfficeCLI",
         "zh_Hans": "OfficeCLI 原生 Office"
@@ -1718,7 +1948,6 @@
     {
       "name": "@xpert-ai/plugin-office-editor",
       "packageName": "@xpert-ai/plugin-office-editor",
-      "version": "0.4.1",
       "displayName": {
         "en_US": "Office Editor",
         "zh_Hans": "Office 编辑器"
@@ -3567,7 +3796,6 @@
     {
       "name": "@xpert-ai/plugin-dingtalk-sso",
       "packageName": "@xpert-ai/plugin-dingtalk-sso",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "DingTalk SSO",
         "zh_Hans": "钉钉单点登录"
@@ -3672,7 +3900,6 @@
         "en_US": "Adds Feishu/Lark SSO login and account binding flows for Xpert.",
         "zh_Hans": "为 Xpert 提供飞书 SSO 登录和账号绑定流程。"
       },
-      "version": "0.0.1",
       "category": "integration",
       "keywords": [
         "lark",
@@ -3792,7 +4019,6 @@
     {
       "name": "@xpert-ai/plugin-jieba",
       "packageName": "@xpert-ai/plugin-jieba",
-      "version": "0.1.1",
       "displayName": {
         "en_US": "Jieba",
         "zh_Hans": "Jieba 中文分词"
@@ -3854,7 +4080,6 @@
         "en_US": "Adds a configurable `advisor` tool that lets the executor consult a secondary model for hard debugging, tradeoffs, and planning.",
         "zh_Hans": "提供可配置的 `advisor` 工具，让执行器在复杂调试、权衡决策和规划场景下咨询一个辅助模型。"
       },
-      "version": "0.0.1",
       "category": "middleware",
       "keywords": [
         "advisor",
@@ -3894,7 +4119,6 @@
     {
       "name": "@xpert-ai/plugin-amap-connector",
       "packageName": "@xpert-ai/plugin-amap-connector",
-      "version": "0.1.1",
       "displayName": {
         "en_US": "AMap Connector",
         "zh_Hans": "高德地图连接器"
@@ -3953,7 +4177,6 @@
     {
       "name": "@xpert-ai/plugin-baidu-netdisk-connector",
       "packageName": "@xpert-ai/plugin-baidu-netdisk-connector",
-      "version": "0.2.0",
       "displayName": {
         "en_US": "Baidu Netdisk Connector",
         "zh_Hans": "百度网盘连接器"
@@ -4011,7 +4234,6 @@
     {
       "name": "@xpert-ai/plugin-canva-connector",
       "packageName": "@xpert-ai/plugin-canva-connector",
-      "version": "0.2.0",
       "displayName": {
         "en_US": "Canva Connector",
         "zh_Hans": "Canva 连接器"
@@ -4077,7 +4299,6 @@
         "en_US": "Adds an `ask_clarification` tool, rewrites mixed tool batches to clarification-only, and turns clarification requests into readable ToolMessages that end the current run.",
         "zh_Hans": "提供 `ask_clarification` 工具，将混合工具批次改写为仅澄清调用，并把澄清请求转换为会结束当前轮的可读 ToolMessage。"
       },
-      "version": "0.0.1",
       "category": "middleware",
       "keywords": [
         "agent",
@@ -4161,7 +4382,6 @@
     {
       "name": "@xpert-ai/plugin-ctrip-wendao-connector",
       "packageName": "@xpert-ai/plugin-ctrip-wendao-connector",
-      "version": "0.1.1",
       "displayName": {
         "en_US": "Ctrip Wendao Connector",
         "zh_Hans": "携程问道连接器"
@@ -4229,7 +4449,6 @@
         "en_US": "Repairs message history with missing tool responses by inserting synthetic error ToolMessages before the next model call.",
         "zh_Hans": "在下一次模型调用前，为缺失工具响应的消息历史补入合成错误 ToolMessage，修复悬空工具调用。"
       },
-      "version": "0.0.1",
       "category": "middleware",
       "keywords": [
         "agent",
@@ -4269,7 +4488,6 @@
     {
       "name": "@xpert-ai/plugin-dingtalk-connector",
       "packageName": "@xpert-ai/plugin-dingtalk-connector",
-      "version": "0.1.1",
       "displayName": {
         "en_US": "DingTalk Connector",
         "zh_Hans": "钉钉连接器"
@@ -4334,7 +4552,6 @@
         "en_US": "Single-plugin file memory runtime with middleware tools, selective recall and after-agent writeback.",
         "zh_Hans": "单插件文件记忆运行时，提供显式记忆工具、选择性召回和 afterAgent 自动写回。"
       },
-      "version": "0.1.0",
       "category": "middleware",
       "keywords": [
         "memory",
@@ -4380,7 +4597,6 @@
         "en_US": "Connects a workspace to GitHub with GitHub App OAuth or a personal access token.",
         "zh_Hans": "通过 GitHub App OAuth 或个人访问令牌将工作区连接到 GitHub。"
       },
-      "version": "0.2.0",
       "category": "middleware",
       "keywords": [
         "github",
@@ -4420,7 +4636,6 @@
     {
       "name": "@xpert-ai/plugin-kdocs-connector",
       "packageName": "@xpert-ai/plugin-kdocs-connector",
-      "version": "0.1.2",
       "displayName": {
         "en_US": "WPS Docs Connector",
         "zh_Hans": "金山文档连接器"
@@ -4485,7 +4700,6 @@
         "en_US": "Bootstraps the Lark CLI tool into the sandbox, downloads AI Agent Skills, and lets agents interact with Lark/Feishu through sandbox_shell.",
         "zh_Hans": "在沙箱中引导安装飞书 CLI，下载 AI Agent Skills，并让智能体通过 sandbox_shell 与飞书交互。"
       },
-      "version": "0.0.6",
       "category": "middleware",
       "keywords": [
         "lark",
@@ -4582,7 +4796,6 @@
         "en_US": "Detect repeated tool-call batches, warn on the next model turn, and stop the run when the repetition becomes unproductive.",
         "zh_Hans": "检测重复的工具调用批次，在下一轮模型调用前提醒，并在重复失去产出时终止运行。"
       },
-      "version": "0.0.1",
       "category": "middleware",
       "keywords": [
         "agent",
@@ -4755,7 +4968,6 @@
     {
       "name": "@xpert-ai/plugin-netease-mail-connector",
       "packageName": "@xpert-ai/plugin-netease-mail-connector",
-      "version": "0.2.0",
       "displayName": {
         "en_US": "NetEase Mail Connector",
         "zh_Hans": "网易邮箱连接器"
@@ -4814,7 +5026,6 @@
     {
       "name": "@xpert-ai/plugin-notion-connector",
       "packageName": "@xpert-ai/plugin-notion-connector",
-      "version": "0.2.2",
       "displayName": {
         "en_US": "Notion Connector",
         "zh_Hans": "Notion 连接器"
@@ -4915,7 +5126,6 @@
     {
       "name": "@xpert-ai/plugin-qq-mail-connector",
       "packageName": "@xpert-ai/plugin-qq-mail-connector",
-      "version": "0.2.0",
       "displayName": {
         "en_US": "QQ Mail Connector",
         "zh_Hans": "QQ 邮箱连接器"
@@ -4975,7 +5185,6 @@
     {
       "name": "@xpert-ai/plugin-tencent-map-connector",
       "packageName": "@xpert-ai/plugin-tencent-map-connector",
-      "version": "0.1.1",
       "displayName": {
         "en_US": "Tencent Maps Connector",
         "zh_Hans": "腾讯地图连接器"
@@ -5129,7 +5338,6 @@
         "en_US": "Adds an on-demand `view_image` tool that loads sandbox image files and temporarily injects them into the next model call.",
         "zh_Hans": "提供按需调用的 `view_image` 工具，用于读取 sandbox 中的图片文件，并在下一次模型调用时临时注入图片。"
       },
-      "version": "0.0.1",
       "category": "middleware",
       "keywords": [
         "image",
@@ -5220,7 +5428,6 @@
         "en_US": "Connects a workspace to WeCom with QR authorization and securely injects user credentials into sandboxed commands.",
         "zh_Hans": "通过扫码授权将工作区连接到企业微信，并将用户凭证安全注入沙箱命令。"
       },
-      "version": "0.2.0",
       "category": "middleware",
       "keywords": [
         "wecom",
@@ -5260,7 +5467,6 @@
     {
       "name": "@xpert-ai/plugin-wps-knowledge-connector",
       "packageName": "@xpert-ai/plugin-wps-knowledge-connector",
-      "version": "0.1.1",
       "displayName": {
         "en_US": "WPS Knowledge Connector",
         "zh_Hans": "WPS 知识库连接器"
@@ -5318,7 +5524,6 @@
     {
       "name": "@xpert-ai/plugin-zsxq-connector",
       "packageName": "@xpert-ai/plugin-zsxq-connector",
-      "version": "0.2.0",
       "displayName": {
         "en_US": "Knowledge Planet Connector",
         "zh_Hans": "知识星球连接器"
@@ -5383,7 +5588,6 @@
         "en_US": "Provide Milvus vector database adapter",
         "zh_Hans": "提供 Milvus 向量数据库适配器"
       },
-      "version": "0.0.3",
       "category": "vector-store",
       "keywords": [
         "milvus",
@@ -5427,7 +5631,6 @@
         "en_US": "Provide Mineru system integration and document transformer",
         "zh_Hans": "提供 Mineru 系统集成和文档转换器"
       },
-      "version": "0.0.9",
       "category": "integration",
       "keywords": [
         "mineru",
@@ -5644,7 +5847,6 @@
         "en_US": "Provide LongCat model provider adapter",
         "zh_Hans": "提供 LongCat 模型提供者适配器"
       },
-      "version": "0.0.3",
       "category": "model",
       "keywords": [
         "longcat",
@@ -5688,7 +5890,6 @@
         "en_US": "Provide Xiaomi MiMo model provider adapter",
         "zh_Hans": "提供 Xiaomi MiMo 模型提供者适配器"
       },
-      "version": "0.0.3",
       "category": "model",
       "keywords": [
         "mimo",
@@ -5995,7 +6196,6 @@
         "en_US": "Provide StepFun model provider adapter",
         "zh_Hans": "提供阶跃星辰模型提供者适配器"
       },
-      "version": "0.0.3",
       "category": "model",
       "keywords": [
         "stepfun",
@@ -6213,7 +6413,6 @@
         "en_US": "Connects Xpert to Tianyi Cloud Xirang MaaS for OpenAI-compatible language, embedding, rerank, and image models.",
         "zh_Hans": "通过天翼云星辰 MaaS 的兼容 OpenAI API 接入文本、向量、重排和图片模型。"
       },
-      "version": "0.0.0",
       "category": "model",
       "keywords": [
         "tianyi-cloud",
@@ -6296,7 +6495,6 @@
     {
       "name": "@xpert-ai/plugin-motion",
       "packageName": "@xpert-ai/plugin-motion",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "Motion",
         "zh_Hans": "Motion 动效"
@@ -6627,7 +6825,6 @@
     {
       "name": "@xpert-ai/plugin-opendataloader",
       "packageName": "@xpert-ai/plugin-opendataloader",
-      "version": "0.0.1",
       "displayName": {
         "en_US": "OpenDataLoader PDF",
         "zh_Hans": "OpenDataLoader PDF 解析器"
@@ -6941,7 +7138,6 @@
     {
       "name": "@xpert-ai/plugin-product-design",
       "packageName": "@xpert-ai/plugin-product-design",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "Product Design",
         "zh_Hans": "产品设计"
@@ -7366,7 +7562,6 @@
         "en_US": "Provides a VLM-based document image understander",
         "zh_Hans": "提供基于 VLM 的文档图像理解器"
       },
-      "version": "0.0.1",
       "category": "integration",
       "keywords": [
         "rag",
@@ -7752,7 +7947,6 @@
     {
       "name": "@xpert-ai/community-browser-lab",
       "packageName": "@xpert-ai/community-browser-lab",
-      "version": "0.1.0",
       "displayName": {
         "en_US": "XpertAI Browser Lab",
         "zh_Hans": "XpertAI Browser Lab"
@@ -7882,7 +8076,6 @@
     {
       "name": "@xpert-ai/community-data-analytics",
       "packageName": "@xpert-ai/community-data-analytics",
-      "version": "0.1.34",
       "displayName": {
         "en_US": "Data Analytics",
         "zh_Hans": "Data Analytics"
@@ -8352,7 +8545,6 @@
     {
       "name": "@xpert-ai/community-financial-markets",
       "packageName": "@xpert-ai/community-financial-markets",
-      "version": "0.1.27",
       "displayName": {
         "en_US": "Financial Markets",
         "zh_Hans": "Financial Markets"
@@ -9132,7 +9324,6 @@
     {
       "name": "@xpert-ai/community-sales",
       "packageName": "@xpert-ai/community-sales",
-      "version": "0.2.16",
       "displayName": {
         "en_US": "Sales",
         "zh_Hans": "Sales"
