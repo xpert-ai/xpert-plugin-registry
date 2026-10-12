@@ -1,0 +1,181 @@
+{
+  "name": "@xpert-ai/plugin-code-review",
+  "packageName": "@xpert-ai/plugin-code-review",
+  "displayName": {
+    "en_US": "Code Review",
+    "zh_Hans": "代码审查"
+  },
+  "description": {
+    "en_US": "GitHub pull request review with immutable diff snapshots, private AI findings, checks, repository policies, automatic review, and confirmed manual submission.",
+    "zh_Hans": "GitHub PR 代码审查应用，支持固定版本的差异快照、私有 AI 审查结果、检查状态、仓库策略、自动审查及人工确认后提交。"
+  },
+  "level": "system",
+  "artifactNamespace": "code_review",
+  "category": "middleware",
+  "keywords": [
+    "code-review",
+    "github",
+    "pull-request",
+    "diff",
+    "automation",
+    "workbench",
+    "assistant-template",
+    "agentic-app"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/code-review"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/develop/xpertai/apps/code-review",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><circle cx=\"6\" cy=\"5\" r=\"3\"/><circle cx=\"6\" cy=\"19\" r=\"3\"/><circle cx=\"18\" cy=\"19\" r=\"3\"/><path d=\"M6 8v8m12 0V9a4 4 0 0 0-4-4h-2m2-3-3 3 3 3\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-code-review",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-code-review"
+  },
+  "targetApps": [
+    "xpert",
+    "data-xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "types": [
+        "business-app",
+        "workbench-view",
+        "assistant-tool"
+      ],
+      "capabilities": [
+        "code_review.core"
+      ],
+      "runtime": {
+        "middlewareProviders": [
+          "code_review.tools"
+        ],
+        "viewProviders": [
+          "code_review.provider"
+        ],
+        "templateProviders": [
+          "code_review.templates"
+        ]
+      },
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "middleware",
+        "contents": [
+          {
+            "type": "app",
+            "name": "code-review",
+            "displayName": {
+              "en_US": "Code Review",
+              "zh_Hans": "代码审查"
+            },
+            "icon": {
+              "type": "svg",
+              "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\"><circle cx=\"6\" cy=\"5\" r=\"3\"/><circle cx=\"6\" cy=\"19\" r=\"3\"/><circle cx=\"18\" cy=\"19\" r=\"3\"/><path d=\"M6 8v8m12 0V9a4 4 0 0 0-4-4h-2m2-3-3 3 3 3\"/></svg>"
+            },
+            "description": {
+              "en_US": "Review pull requests with commit-bound evidence.",
+              "zh_Hans": "对照提交版本审查代码，在确认后提交到 GitHub。"
+            },
+            "appConfig": {
+              "scope": "organization",
+              "assistantTemplateKey": "code-review-assistant",
+              "workspace": {
+                "mode": "dedicated",
+                "name": {
+                  "en_US": "Code Review",
+                  "zh_Hans": "代码审查工作空间"
+                },
+                "sharing": "organization"
+              },
+              "knowledgebases": [],
+              "modelRequirements": {
+                "primary": true
+              },
+              "entry": {
+                "type": "assistant-chat"
+              },
+              "presentation": {
+                "tagline": {
+                  "en_US": "Read the change. Verify the finding.",
+                  "zh_Hans": "读懂变更，核实问题。"
+                },
+                "developer": "XpertAI",
+                "features": [
+                  {
+                    "key": "inbox",
+                    "title": {
+                      "en_US": "Pull request inbox",
+                      "zh_Hans": "PR 收件箱"
+                    },
+                    "description": {
+                      "en_US": "Open a public URL, or use your connected GitHub account for requested and authored pull requests.",
+                      "zh_Hans": "输入公开 PR 地址，或通过已连接的 GitHub 查看待审查和自己创建的 PR。"
+                    }
+                  },
+                  {
+                    "key": "review",
+                    "title": {
+                      "en_US": "Evidence-based review",
+                      "zh_Hans": "带依据的审查"
+                    },
+                    "description": {
+                      "en_US": "Browse diffs, checks and model findings tied to an immutable commit.",
+                      "zh_Hans": "浏览文件差异、检查结果与固定提交版本上的模型发现。"
+                    }
+                  },
+                  {
+                    "key": "submit",
+                    "title": {
+                      "en_US": "Confirm before submitting",
+                      "zh_Hans": "确认后提交"
+                    },
+                    "description": {
+                      "en_US": "Choose findings and submit after a fresh commit check.",
+                      "zh_Hans": "选择要提交的问题，校验最新提交后再发送。"
+                    }
+                  }
+                ],
+                "dataScope": {
+                  "en_US": "Drafts are isolated by tenant, organization, user and Assistant. GitHub credentials stay in the host connector.",
+                  "zh_Hans": "草稿按租户、组织、用户和助手隔离。GitHub 凭据由平台连接器管理。"
+                },
+                "initializationSummary": {
+                  "en_US": "Creates a workspace and Assistant. Select an existing primary model. Connect GitHub for private repositories and submission.",
+                  "zh_Hans": "创建工作空间及助手。选择现有主模型；私有仓库及提交审查需要连接 GitHub。"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "data-xpert": {
+      "types": [
+        "workbench-view",
+        "assistant-tool"
+      ],
+      "capabilities": [
+        "code_review.core"
+      ],
+      "runtime": {
+        "middlewareProviders": [
+          "code_review.tools"
+        ],
+        "viewProviders": [
+          "code_review.provider"
+        ]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/develop/xpertai/apps/code-review/README.md",
+  "updatedAt": "2026-10-12T16:47:43.076Z"
+}
