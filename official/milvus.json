@@ -8,7 +8,6 @@
     "en_US": "Provide Milvus vector database adapter",
     "zh_Hans": "提供 Milvus 向量数据库适配器"
   },
-  "version": "0.0.3",
   "category": "vector-store",
   "keywords": ["milvus", "vector store"],
   "author": {

@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-tencent-map-connector",
   "packageName": "@xpert-ai/plugin-tencent-map-connector",
-  "version": "0.1.1",
   "displayName": {
     "en_US": "Tencent Maps Connector",
     "zh_Hans": "腾讯地图连接器"

@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-motion",
   "packageName": "@xpert-ai/plugin-motion",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "Motion",
     "zh_Hans": "Motion 动效"

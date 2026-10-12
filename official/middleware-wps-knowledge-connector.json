@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-wps-knowledge-connector",
   "packageName": "@xpert-ai/plugin-wps-knowledge-connector",
-  "version": "0.1.1",
   "displayName": {
     "en_US": "WPS Knowledge Connector",
     "zh_Hans": "WPS 知识库连接器"

@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-notion-connector",
   "packageName": "@xpert-ai/plugin-notion-connector",
-  "version": "0.2.2",
   "displayName": {
     "en_US": "Notion Connector",
     "zh_Hans": "Notion 连接器"

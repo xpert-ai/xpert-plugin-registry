@@ -8,7 +8,6 @@
     "en_US": "Provide Mineru system integration and document transformer",
     "zh_Hans": "提供 Mineru 系统集成和文档转换器"
   },
-  "version": "0.0.9",
   "category": "integration",
   "keywords": ["mineru", "integration", "transformer"],
   "author": {

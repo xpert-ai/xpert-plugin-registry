@@ -8,7 +8,6 @@
     "en_US": "Repairs message history with missing tool responses by inserting synthetic error ToolMessages before the next model call.",
     "zh_Hans": "在下一次模型调用前，为缺失工具响应的消息历史补入合成错误 ToolMessage，修复悬空工具调用。"
   },
-  "version": "0.0.1",
   "category": "middleware",
   "keywords": [
     "agent",

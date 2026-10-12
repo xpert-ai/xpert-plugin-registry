@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-office-editor",
   "packageName": "@xpert-ai/plugin-office-editor",
-  "version": "0.4.1",
   "displayName": {
     "en_US": "Office Editor",
     "zh_Hans": "Office 编辑器"

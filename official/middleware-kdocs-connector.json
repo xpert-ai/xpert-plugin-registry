@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-kdocs-connector",
   "packageName": "@xpert-ai/plugin-kdocs-connector",
-  "version": "0.1.2",
   "displayName": {
     "en_US": "WPS Docs Connector",
     "zh_Hans": "金山文档连接器"

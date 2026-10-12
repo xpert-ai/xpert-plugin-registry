@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-jieba",
   "packageName": "@xpert-ai/plugin-jieba",
-  "version": "0.1.1",
   "displayName": {
     "en_US": "Jieba",
     "zh_Hans": "Jieba 中文分词"

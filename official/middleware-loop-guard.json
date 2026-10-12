@@ -8,7 +8,6 @@
     "en_US": "Detect repeated tool-call batches, warn on the next model turn, and stop the run when the repetition becomes unproductive.",
     "zh_Hans": "检测重复的工具调用批次，在下一轮模型调用前提醒，并在重复失去产出时终止运行。"
   },
-  "version": "0.0.1",
   "category": "middleware",
   "keywords": [
     "agent",

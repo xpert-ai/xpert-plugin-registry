@@ -8,7 +8,6 @@
     "en_US": "Connects a workspace to WeCom with QR authorization and securely injects user credentials into sandboxed commands.",
     "zh_Hans": "通过扫码授权将工作区连接到企业微信，并将用户凭证安全注入沙箱命令。"
   },
-  "version": "0.2.0",
   "category": "middleware",
   "keywords": [
     "wecom",

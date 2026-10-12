@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-db-studio",
   "packageName": "@xpert-ai/plugin-db-studio",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "DB Studio",
     "zh_Hans": "DB Studio 数据库工作台"

@@ -8,7 +8,6 @@
     "en_US": "Adds an `ask_clarification` tool, rewrites mixed tool batches to clarification-only, and turns clarification requests into readable ToolMessages that end the current run.",
     "zh_Hans": "提供 `ask_clarification` 工具，将混合工具批次改写为仅澄清调用，并把澄清请求转换为会结束当前轮的可读 ToolMessage。"
   },
-  "version": "0.0.1",
   "category": "middleware",
   "keywords": [
     "agent",

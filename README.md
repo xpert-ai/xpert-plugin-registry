@@ -29,7 +29,6 @@ Fields in a single plugin object within `plugins`:
 | `name` | string | ✅ | Unique plugin identifier, recommended to use npm package name or `@scope/name`. |
 | `displayName` | string | ✅ | Display name. |
 | `description` | string | ✅ | Brief description of functionality. |
-| `version` | string | ✅ | Current version, semantic versioning (semver). |
 | `category` | string | ⭕️ | Plugin category, for marketplace display. |
 | `keywords` | string[] | ⭕️ | Keyword tags. |
 | `author.name` / `author.url` | string | ⭕️ | Author information. |
@@ -41,6 +40,8 @@ Fields in a single plugin object within `plugins`:
 | `verified` | boolean | Auto | Automatically assigned based on directory; do not set manually. |
 
 ✅: Required; ⭕️: Optional but recommended.
+
+Do not add a `version` field to registry metadata. Release versions belong in the plugin's package metadata.
 
 ### Category Semantics
 
@@ -71,7 +72,6 @@ Example metadata file:
   "name": "@xpert-ai/plugin-sample",
   "displayName": "Sample Connector",
   "description": "Connects Sample API to Xpert.",
-  "version": "1.0.0",
   "category": "Integration",
   "keywords": ["sample", "connector"],
   "author": {

@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-dingtalk-sso",
   "packageName": "@xpert-ai/plugin-dingtalk-sso",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "DingTalk SSO",
     "zh_Hans": "钉钉单点登录"

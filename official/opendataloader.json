@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-opendataloader",
   "packageName": "@xpert-ai/plugin-opendataloader",
-  "version": "0.0.1",
   "displayName": {
     "en_US": "OpenDataLoader PDF",
     "zh_Hans": "OpenDataLoader PDF 解析器"

@@ -1,0 +1,231 @@
+{
+  "name": "@xpert-ai/plugin-meetings",
+  "packageName": "@xpert-ai/plugin-meetings",
+  "displayName": {
+    "en_US": "Meetings",
+    "zh_Hans": "会议记录"
+  },
+  "description": {
+    "en_US": "Private file-backed meeting notes for Xpert Desktop and the web Workbench, with recording, transcription, personal notes, evidence-backed minutes, and meeting recall.",
+    "zh_Hans": "面向 Xpert Desktop 和网页工作台的私有会议记录应用，以文件保存会议内容，支持录音、转写、个人笔记、有原文依据的纪要和会议回顾。"
+  },
+  "level": "system",
+  "artifactNamespace": "meetings",
+  "category": "middleware",
+  "keywords": [
+    "meetings",
+    "meeting-notes",
+    "recording",
+    "transcription",
+    "speech-to-text",
+    "minutes",
+    "meeting-recall",
+    "workbench",
+    "assistant-template",
+    "agentic-app"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/meetings"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/meetings",
+  "icon": {
+    "type": "image",
+    "value": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-icon-v1.png",
+    "alt": "Meetings"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-meetings",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-meetings"
+  },
+  "license": "AGPL-3.0",
+  "skills": "./skills/",
+  "assets": {
+    "logo": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-icon-v1.png",
+    "screenshots": [
+      "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-overview-zh-v1.png"
+    ]
+  },
+  "targetApps": [
+    "xpert",
+    "data-xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "types": [
+        "business-app",
+        "workbench-view",
+        "assistant-template",
+        "assistant-tool",
+        "skill"
+      ],
+      "capabilities": [
+        "meetings.notes"
+      ],
+      "runtime": {
+        "middlewareProviders": [
+          "meetings.tools"
+        ],
+        "viewProviders": [
+          "meetings.provider"
+        ],
+        "templateProviders": [
+          "meetings.templates"
+        ]
+      },
+      "marketplace": {
+        "category": "productivity",
+        "contents": [
+          {
+            "type": "app",
+            "name": "meetings",
+            "displayName": "Meetings",
+            "description": {
+              "en_US": "Private meeting notes in Xpert Desktop.",
+              "zh_Hans": "在 Desktop 记录会议，整理笔记与后续事项。"
+            },
+            "icon": {
+              "type": "image",
+              "value": "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-icon-v1.png",
+              "alt": "Meetings"
+            },
+            "color": "#f59e0b",
+            "appConfig": {
+              "scope": "organization",
+              "assistantTemplateKey": "meetings-assistant",
+              "workspace": {
+                "mode": "dedicated",
+                "name": {
+                  "en_US": "Meetings",
+                  "zh_Hans": "会议工作空间"
+                },
+                "sharing": "organization"
+              },
+              "knowledgebases": [],
+              "modelRequirements": {
+                "primary": true
+              },
+              "entry": {
+                "type": "assistant-chat"
+              },
+              "presentation": {
+                "tagline": {
+                  "en_US": "Stay in the conversation. Keep what matters.",
+                  "zh_Hans": "专注讨论，留下重点。"
+                },
+                "developer": "XpertAI",
+                "screenshots": [
+                  "https://raw.githubusercontent.com/xpert-ai/xpert-plugins/main/xpertai/apps/meetings/assets/brand/meetings-overview-zh-v1.png"
+                ],
+                "features": [
+                  {
+                    "key": "capture",
+                    "title": {
+                      "en_US": "Desktop recording",
+                      "zh_Hans": "桌面录音"
+                    },
+                    "description": {
+                      "en_US": "Manually record microphone and system audio on macOS 15+.",
+                      "zh_Hans": "在 macOS 15+ 手动记录麦克风与系统音频。"
+                    }
+                  },
+                  {
+                    "key": "notes",
+                    "title": {
+                      "en_US": "Notes and evidence",
+                      "zh_Hans": "笔记与原文依据"
+                    },
+                    "description": {
+                      "en_US": "Keep personal notes independent. Verify decisions and follow-ups against transcript excerpts.",
+                      "zh_Hans": "个人笔记独立保存，决策与后续事项可核对转写原文。"
+                    }
+                  },
+                  {
+                    "key": "recall",
+                    "title": {
+                      "en_US": "Find and prepare",
+                      "zh_Hans": "回顾与准备"
+                    },
+                    "description": {
+                      "en_US": "Search private meeting history and prepare for the next conversation.",
+                      "zh_Hans": "搜索自己的会议记录，回顾承诺并准备下一次讨论。"
+                    }
+                  }
+                ],
+                "dataScope": {
+                  "en_US": "Meeting content is private to each user in the current organization. Files are kept in the administrator-configured data directory.",
+                  "zh_Hans": "会议内容按当前组织中的用户隔离，以文件保存到管理员配置的持久目录。"
+                },
+                "initializationSummary": {
+                  "en_US": "Creates a workspace and Assistant. Configure speech-to-text on the Assistant and the primary chat model on the Assistant before recording.",
+                  "zh_Hans": "创建工作空间和会议助手。录音前需为助手配置语音转写模型，并配置助手的主对话模型。"
+                }
+              }
+            }
+          },
+          {
+            "type": "view",
+            "name": "meetings.workspace",
+            "displayName": {
+              "en_US": "Meetings",
+              "zh_Hans": "会议记录"
+            },
+            "description": "Record meetings and review notes in the Desktop plugin view."
+          },
+          {
+            "type": "middleware",
+            "name": "meetings.tools",
+            "displayName": "Meetings tools",
+            "description": "Search private meetings and review follow-ups."
+          },
+          {
+            "type": "assistant-template",
+            "name": "meetings-assistant",
+            "displayName": {
+              "en_US": "Meetings Assistant",
+              "zh_Hans": "会议助手"
+            },
+            "description": {
+              "en_US": "Record meetings and review decisions and follow-ups.",
+              "zh_Hans": "记录会议，回顾决策与后续事项。"
+            },
+            "metadata": {
+              "app": "meetings"
+            }
+          },
+          {
+            "type": "skill",
+            "name": "meeting-recall",
+            "displayName": "Meeting recall",
+            "description": "Review commitments and prepare one-on-ones using private meeting evidence."
+          }
+        ]
+      }
+    },
+    "data-xpert": {
+      "types": [
+        "workbench-view",
+        "assistant-tool"
+      ],
+      "capabilities": [
+        "meetings.notes"
+      ],
+      "runtime": {
+        "middlewareProviders": [
+          "meetings.tools"
+        ],
+        "viewProviders": [
+          "meetings.provider"
+        ]
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/meetings/README.md",
+  "updatedAt": "2026-10-12T00:00:00.000Z"
+}

@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-amap-connector",
   "packageName": "@xpert-ai/plugin-amap-connector",
-  "version": "0.1.1",
   "displayName": {
     "en_US": "AMap Connector",
     "zh_Hans": "高德地图连接器"

@@ -10,7 +10,6 @@ const __dirname = path.dirname(__filename)
  * @property {string} name
  * @property {string} displayName
  * @property {string} description
- * @property {string} version
  * @property {string} [category]
  * @property {string[]} [keywords]
  * @property {{name?: string, url?: string}} [author]

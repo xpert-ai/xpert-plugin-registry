@@ -8,7 +8,6 @@
     "en_US": "Provide Xiaomi MiMo model provider adapter",
     "zh_Hans": "提供 Xiaomi MiMo 模型提供者适配器"
   },
-  "version": "0.0.3",
   "category": "model",
   "keywords": [
     "mimo",

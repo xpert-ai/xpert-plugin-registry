@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/community-data-analytics",
   "packageName": "@xpert-ai/community-data-analytics",
-  "version": "0.1.34",
   "displayName": {
     "en_US": "Data Analytics",
     "zh_Hans": "Data Analytics"

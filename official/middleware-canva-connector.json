@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-canva-connector",
   "packageName": "@xpert-ai/plugin-canva-connector",
-  "version": "0.2.0",
   "displayName": {
     "en_US": "Canva Connector",
     "zh_Hans": "Canva 连接器"

@@ -8,7 +8,6 @@
     "en_US": "Provides a VLM-based document image understander",
     "zh_Hans": "提供基于 VLM 的文档图像理解器"
   },
-  "version": "0.0.1",
   "category": "integration",
   "keywords": ["rag", "vlm", "integration", "transformer"],
   "author": {

@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-netease-mail-connector",
   "packageName": "@xpert-ai/plugin-netease-mail-connector",
-  "version": "0.2.0",
   "displayName": {
     "en_US": "NetEase Mail Connector",
     "zh_Hans": "网易邮箱连接器"

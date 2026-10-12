@@ -8,7 +8,6 @@
     "en_US": "Adds an on-demand `view_image` tool that loads sandbox image files and temporarily injects them into the next model call.",
     "zh_Hans": "提供按需调用的 `view_image` 工具，用于读取 sandbox 中的图片文件，并在下一次模型调用时临时注入图片。"
   },
-  "version": "0.0.1",
   "category": "middleware",
   "keywords": [
     "image",

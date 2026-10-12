@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-product-design",
   "packageName": "@xpert-ai/plugin-product-design",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "Product Design",
     "zh_Hans": "产品设计"

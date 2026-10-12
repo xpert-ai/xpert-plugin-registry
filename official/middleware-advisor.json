@@ -8,7 +8,6 @@
     "en_US": "Adds a configurable `advisor` tool that lets the executor consult a secondary model for hard debugging, tradeoffs, and planning.",
     "zh_Hans": "提供可配置的 `advisor` 工具，让执行器在复杂调试、权衡决策和规划场景下咨询一个辅助模型。"
   },
-  "version": "0.0.1",
   "category": "middleware",
   "keywords": [
     "advisor",

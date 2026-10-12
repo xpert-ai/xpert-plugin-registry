@@ -8,7 +8,6 @@
     "en_US": "Bootstraps the Lark CLI tool into the sandbox, downloads AI Agent Skills, and lets agents interact with Lark/Feishu through sandbox_shell.",
     "zh_Hans": "在沙箱中引导安装飞书 CLI，下载 AI Agent Skills，并让智能体通过 sandbox_shell 与飞书交互。"
   },
-  "version": "0.0.6",
   "category": "middleware",
   "keywords": [
     "lark",

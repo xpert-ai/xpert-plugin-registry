@@ -8,7 +8,6 @@
     "en_US": "Provide StepFun model provider adapter",
     "zh_Hans": "提供阶跃星辰模型提供者适配器"
   },
-  "version": "0.0.3",
   "category": "model",
   "keywords": [
     "stepfun",

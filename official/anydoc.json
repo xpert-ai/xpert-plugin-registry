@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-anydoc",
   "packageName": "@xpert-ai/plugin-anydoc",
-  "version": "0.0.1",
   "displayName": {
     "en_US": "AnyDoc",
     "zh_Hans": "AnyDoc 文档解析器"

@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-qq-mail-connector",
   "packageName": "@xpert-ai/plugin-qq-mail-connector",
-  "version": "0.2.0",
   "displayName": {
     "en_US": "QQ Mail Connector",
     "zh_Hans": "QQ 邮箱连接器"

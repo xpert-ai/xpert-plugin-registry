@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-dingtalk-connector",
   "packageName": "@xpert-ai/plugin-dingtalk-connector",
-  "version": "0.1.1",
   "displayName": {
     "en_US": "DingTalk Connector",
     "zh_Hans": "钉钉连接器"

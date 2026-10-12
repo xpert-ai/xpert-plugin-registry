@@ -8,7 +8,6 @@
     "en_US": "Adds Feishu/Lark SSO login and account binding flows for Xpert.",
     "zh_Hans": "为 Xpert 提供飞书 SSO 登录和账号绑定流程。"
   },
-  "version": "0.0.1",
   "category": "integration",
   "keywords": [
     "lark",

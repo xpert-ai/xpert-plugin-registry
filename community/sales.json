@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/community-sales",
   "packageName": "@xpert-ai/community-sales",
-  "version": "0.2.16",
   "displayName": {
     "en_US": "Sales",
     "zh_Hans": "Sales"

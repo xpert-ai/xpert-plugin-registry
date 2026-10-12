@@ -8,7 +8,6 @@
     "en_US": "Connects a workspace to GitHub with GitHub App OAuth or a personal access token.",
     "zh_Hans": "通过 GitHub App OAuth 或个人访问令牌将工作区连接到 GitHub。"
   },
-  "version": "0.2.0",
   "category": "middleware",
   "keywords": [
     "github",

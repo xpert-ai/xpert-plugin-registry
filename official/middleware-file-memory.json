@@ -8,7 +8,6 @@
     "en_US": "Single-plugin file memory runtime with middleware tools, selective recall and after-agent writeback.",
     "zh_Hans": "单插件文件记忆运行时，提供显式记忆工具、选择性召回和 afterAgent 自动写回。"
   },
-  "version": "0.1.0",
   "category": "middleware",
   "keywords": [
     "memory",

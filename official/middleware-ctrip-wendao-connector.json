@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/plugin-ctrip-wendao-connector",
   "packageName": "@xpert-ai/plugin-ctrip-wendao-connector",
-  "version": "0.1.1",
   "displayName": {
     "en_US": "Ctrip Wendao Connector",
     "zh_Hans": "携程问道连接器"

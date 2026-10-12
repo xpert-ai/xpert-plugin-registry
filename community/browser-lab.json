@@ -1,7 +1,6 @@
 {
   "name": "@xpert-ai/community-browser-lab",
   "packageName": "@xpert-ai/community-browser-lab",
-  "version": "0.1.0",
   "displayName": {
     "en_US": "XpertAI Browser Lab",
     "zh_Hans": "XpertAI Browser Lab"
