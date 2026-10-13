@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-12T16:49:17.611Z",
-  "total": 113,
+  "updatedAt": "2026-10-13T01:47:03.700Z",
+  "total": 114,
   "official": [
     "@xpert-ai/plugin-anydoc",
     "@xpert-ai/plugin-canvas",
@@ -11,6 +11,7 @@
     "@xpert-ai/plugin-drawio",
     "@xpert-ai/plugin-excalidraw",
     "@xpert-ai/plugin-lucidchart",
+    "@xpert-ai/plugin-maps",
     "@xpert-ai/plugin-meetings",
     "@xpert-ai/plugin-office-cli",
     "@xpert-ai/plugin-office-editor",
@@ -1711,6 +1712,70 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/lucidchart#readme",
       "updatedAt": "2026-06-15T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-maps",
+      "packageName": "@xpert-ai/plugin-maps",
+      "displayName": {
+        "en_US": "Maps",
+        "zh_Hans": "地图"
+      },
+      "description": {
+        "en_US": "Interactive maps in the Xpert Workbench and native MCP App, with place and nearby search, linked markers and cards, place details, walking and driving routes, and draft references. Supports AMap and Tencent Maps through workspace Connectors, plus an explicit demo mode.",
+        "zh_Hans": "在 Xpert 工作台和原生 MCP App 中使用交互式地图，支持地点与周边搜索、标记和卡片联动、地点详情、步行与驾车路线，以及向对话草稿添加引用。通过工作空间连接器接入高德或腾讯地图，并提供独立模拟演示模式。"
+      },
+      "level": "organization",
+      "artifactNamespace": "maps",
+      "category": "middleware",
+      "keywords": [
+        "maps",
+        "amap",
+        "tencent",
+        "mcp-app",
+        "places",
+        "routes"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/maps"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/develop/xpertai/apps/maps",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\"><path d=\"m3 6 6-3 6 3 6-3v15l-6 3-6-3-6 3zM9 3v15m6-12v15\"/><circle cx=\"15\" cy=\"9\" r=\"2\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-maps",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-maps"
+      },
+      "license": "AGPL-3.0",
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "workbench-view",
+            "assistant-tool"
+          ],
+          "capabilities": [
+            "maps:explorer"
+          ],
+          "marketplace": {
+            "category": "travel",
+            "subcategory": "middleware"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/develop/xpertai/apps/maps/README.md",
+      "updatedAt": "2026-10-13T01:41:24.388Z",
       "verified": true
     },
     {
