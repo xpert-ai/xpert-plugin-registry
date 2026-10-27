@@ -1,7 +1,14 @@
 {
-  "updatedAt": "2026-10-13T01:47:03.700Z",
-  "total": 114,
+  "updatedAt": "2026-10-27T06:07:47.034Z",
+  "total": 126,
   "official": [
+    "@xpert-ai/plugin-analytics-data-xpert",
+    "@xpert-ai/plugin-analytics-files",
+    "@xpert-ai/plugin-analytics-mcp",
+    "@xpert-ai/plugin-analytics-mysql",
+    "@xpert-ai/plugin-analytics-postgres",
+    "@xpert-ai/plugin-analytics-rest",
+    "@xpert-ai/plugin-analytics-workspace-script",
     "@xpert-ai/plugin-anydoc",
     "@xpert-ai/plugin-canvas",
     "@xpert-ai/plugin-code-review",
@@ -10,13 +17,16 @@
     "@xpert-ai/plugin-docx-editor",
     "@xpert-ai/plugin-drawio",
     "@xpert-ai/plugin-excalidraw",
+    "@xpert-ai/plugin-live-dashboard",
     "@xpert-ai/plugin-lucidchart",
     "@xpert-ai/plugin-maps",
+    "@xpert-ai/plugin-markdown-editor",
     "@xpert-ai/plugin-meetings",
     "@xpert-ai/plugin-office-cli",
     "@xpert-ai/plugin-office-editor",
     "@xpert-ai/plugin-pencil",
     "@xpert-ai/plugin-presentation-studio",
+    "@xpert-ai/plugin-spaces",
     "@xpert-ai/plugin-story-studio",
     "@xpert-ai/plugin-baidu-ocr",
     "@xpert-ai/plugin-calculator",
@@ -38,6 +48,7 @@
     "@xpert-ai/plugin-file-system",
     "@xpert-ai/plugin-firecrawl",
     "@xpert-ai/plugin-hana",
+    "@xpert-ai/plugin-agent-runtimes",
     "@xpert-ai/plugin-dingtalk-sso",
     "@xpert-ai/plugin-dingtalk",
     "@xpert-ai/plugin-lark-sso",
@@ -60,6 +71,7 @@
     "@xpert-ai/plugin-long-term-memory",
     "@xpert-ai/plugin-loop-guard",
     "@xpert-ai/plugin-markitdown",
+    "@xpert-ai/plugin-mineru-cli",
     "@xpert-ai/plugin-model-fallback",
     "@xpert-ai/plugin-model-retry",
     "@xpert-ai/plugin-netease-mail-connector",
@@ -120,6 +132,384 @@
     "@xpert-ai/plugin-community-wechat"
   ],
   "plugins": [
+    {
+      "name": "@xpert-ai/plugin-analytics-data-xpert",
+      "packageName": "@xpert-ai/plugin-analytics-data-xpert",
+      "displayName": {
+        "en_US": "data-xpert Analytics",
+        "zh_Hans": "data-xpert 本体分析"
+      },
+      "description": {
+        "en_US": "Governed analytics over authorized data-xpert ontology resources for dashboards and analytical datasets.",
+        "zh_Hans": "在授权范围内查询 data-xpert 本体资源，为实时看板与分析数据集提供数据。"
+      },
+      "level": "system",
+      "category": "tools",
+      "artifactNamespace": "analytics_data_xpert",
+      "keywords": [
+        "analytics-data-xpert",
+        "data-analytics",
+        "tools"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/tools/analytics-data-xpert"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-data-xpert",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3v18h18\"/><path d=\"m7 14 4-4 4 3 5-7\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-analytics-data-xpert",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-data-xpert"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "data-analytics",
+            "subcategory": "tools"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-data-xpert/README.md",
+      "updatedAt": "2026-10-27T06:02:23.973Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-analytics-files",
+      "packageName": "@xpert-ai/plugin-analytics-files",
+      "displayName": {
+        "en_US": "File Analytics",
+        "zh_Hans": "文件数据分析"
+      },
+      "description": {
+        "en_US": "Declarative CSV, JSON and XLSX queries over authorized Workspace files.",
+        "zh_Hans": "对已授权的工作空间 CSV、JSON 和 XLSX 文件执行声明式分析查询。"
+      },
+      "level": "system",
+      "category": "tools",
+      "artifactNamespace": "analytics_files",
+      "keywords": [
+        "analytics-files",
+        "data-analytics",
+        "tools"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/tools/analytics-files"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-files",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z\"/><path d=\"M14 2v6h6M8 13h8M8 17h5\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-analytics-files",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-files"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "data-analytics",
+            "subcategory": "tools"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-files/README.md",
+      "updatedAt": "2026-10-27T06:02:23.974Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-analytics-mcp",
+      "packageName": "@xpert-ai/plugin-analytics-mcp",
+      "displayName": {
+        "en_US": "MCP Analytics",
+        "zh_Hans": "MCP 数据分析"
+      },
+      "description": {
+        "en_US": "Read-only analytics using approved MCP tools on existing platform-managed connections.",
+        "zh_Hans": "通过平台现有连接上的已批准 MCP 工具进行只读数据分析。"
+      },
+      "level": "system",
+      "category": "tools",
+      "artifactNamespace": "analytics_mcp",
+      "keywords": [
+        "analytics-mcp",
+        "data-analytics",
+        "tools"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/tools/analytics-mcp"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-mcp",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"5\" cy=\"12\" r=\"3\"/><circle cx=\"19\" cy=\"5\" r=\"3\"/><circle cx=\"19\" cy=\"19\" r=\"3\"/><path d=\"m8 11 8-5m-8 7 8 5\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-analytics-mcp",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-mcp"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "data-analytics",
+            "subcategory": "tools"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-mcp/README.md",
+      "updatedAt": "2026-10-27T06:02:23.974Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-analytics-mysql",
+      "packageName": "@xpert-ai/plugin-analytics-mysql",
+      "displayName": {
+        "en_US": "MySQL & Doris Analytics",
+        "zh_Hans": "MySQL 与 Doris 分析"
+      },
+      "description": {
+        "en_US": "Scoped MySQL and Apache Doris analytics query providers for dashboards and datasets.",
+        "zh_Hans": "基于授权数据源执行 MySQL 与 Apache Doris 分析查询，为看板和数据集提供数据。"
+      },
+      "level": "system",
+      "category": "database",
+      "artifactNamespace": "analytics_mysql",
+      "keywords": [
+        "analytics-mysql",
+        "data-analytics",
+        "database"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/tools/analytics-mysql"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-mysql",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-analytics-mysql",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-mysql"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "data-analytics",
+            "subcategory": "database"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-mysql/README.md",
+      "updatedAt": "2026-10-27T06:02:23.974Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-analytics-postgres",
+      "packageName": "@xpert-ai/plugin-analytics-postgres",
+      "displayName": {
+        "en_US": "PostgreSQL Analytics",
+        "zh_Hans": "PostgreSQL 数据分析"
+      },
+      "description": {
+        "en_US": "PostgreSQL analytics query provider using governed platform data sources.",
+        "zh_Hans": "使用平台管理的数据源执行 PostgreSQL 分析查询。"
+      },
+      "level": "system",
+      "category": "database",
+      "artifactNamespace": "analytics_postgres",
+      "keywords": [
+        "analytics-postgres",
+        "data-analytics",
+        "database"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/tools/analytics-postgres"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-postgres",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-analytics-postgres",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-postgres"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "data-analytics",
+            "subcategory": "database"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-postgres/README.md",
+      "updatedAt": "2026-10-27T06:02:23.974Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-analytics-rest",
+      "packageName": "@xpert-ai/plugin-analytics-rest",
+      "displayName": {
+        "en_US": "REST/JSON Analytics",
+        "zh_Hans": "REST/JSON 数据分析"
+      },
+      "description": {
+        "en_US": "Read-only analytics using approved REST/JSON operations on platform-managed connections.",
+        "zh_Hans": "通过平台现有连接上的已批准 REST/JSON 操作进行只读数据分析。"
+      },
+      "level": "system",
+      "category": "tools",
+      "artifactNamespace": "analytics_rest",
+      "keywords": [
+        "analytics-rest",
+        "data-analytics",
+        "tools"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/tools/analytics-rest"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-rest",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"5\" cy=\"12\" r=\"3\"/><circle cx=\"19\" cy=\"5\" r=\"3\"/><circle cx=\"19\" cy=\"19\" r=\"3\"/><path d=\"m8 11 8-5m-8 7 8 5\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-analytics-rest",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-rest"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "data-analytics",
+            "subcategory": "tools"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-rest/README.md",
+      "updatedAt": "2026-10-27T06:02:23.974Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-analytics-workspace-script",
+      "packageName": "@xpert-ai/plugin-analytics-workspace-script",
+      "displayName": {
+        "en_US": "Workspace Script Analytics",
+        "zh_Hans": "工作空间脚本分析"
+      },
+      "description": {
+        "en_US": "Python and JavaScript analytics over authorized Workspace files and data sources through governed Sandbox Jobs.",
+        "zh_Hans": "通过受控沙箱任务运行 Python 或 JavaScript，对授权工作空间文件和数据源进行分析。"
+      },
+      "level": "system",
+      "category": "tools",
+      "artifactNamespace": "workspace_script",
+      "keywords": [
+        "analytics-workspace-script",
+        "data-analytics",
+        "tools"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/tools/analytics-workspace-script"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-workspace-script",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"m8 9-3 3 3 3m8-6 3 3-3 3m-3-8-2 10\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-analytics-workspace-script",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-workspace-script"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "data-analytics",
+            "subcategory": "tools"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-workspace-script/README.md",
+      "updatedAt": "2026-10-27T06:02:23.974Z",
+      "verified": true
+    },
     {
       "name": "@xpert-ai/plugin-anydoc",
       "packageName": "@xpert-ai/plugin-anydoc",
@@ -1540,6 +1930,60 @@
       "verified": true
     },
     {
+      "name": "@xpert-ai/plugin-live-dashboard",
+      "packageName": "@xpert-ai/plugin-live-dashboard",
+      "displayName": {
+        "en_US": "Live Dashboard",
+        "zh_Hans": "实时看板"
+      },
+      "description": {
+        "en_US": "Versioned live dashboards over governed analytics sources, with previews, filters and fixed-version sharing.",
+        "zh_Hans": "基于授权分析数据创建实时看板，支持预览、筛选、版本管理与固定版本分享。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "artifactNamespace": "live_dashboard",
+      "keywords": [
+        "live-dashboard",
+        "data-analytics",
+        "middleware"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/live-dashboard"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/live-dashboard",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3v18h18\"/><path d=\"m7 14 4-4 4 3 5-7\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-live-dashboard",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-live-dashboard"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "data-analytics",
+            "subcategory": "middleware"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/live-dashboard/README.md",
+      "updatedAt": "2026-10-27T06:02:23.972Z",
+      "verified": true
+    },
+    {
       "name": "@xpert-ai/plugin-lucidchart",
       "packageName": "@xpert-ai/plugin-lucidchart",
       "displayName": {
@@ -1776,6 +2220,67 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/develop/xpertai/apps/maps/README.md",
       "updatedAt": "2026-10-13T01:41:24.388Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-markdown-editor",
+      "packageName": "@xpert-ai/plugin-markdown-editor",
+      "displayName": {
+        "en_US": "Markdown Editor",
+        "zh_Hans": "Markdown 编辑器"
+      },
+      "description": {
+        "en_US": "Collaborative Tiptap Markdown editing backed by authorized Project files.",
+        "zh_Hans": "基于项目文件的 Tiptap Markdown 协作编辑器，提供实时协作与工作台编辑视图。"
+      },
+      "level": "system",
+      "category": "integration",
+      "artifactNamespace": "markdown_editor",
+      "keywords": [
+        "markdown-editor",
+        "productivity",
+        "integration"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/markdown-editor"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/markdown-editor",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M6 15V9l3 3 3-3v6m4-6v6m-2-2 2 2 2-2\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-markdown-editor",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-markdown-editor"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "workbench-view"
+          ],
+          "runtime": {
+            "viewProviders": [
+              "markdown.views"
+            ]
+          },
+          "marketplace": {
+            "category": "productivity",
+            "subcategory": "integration"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/markdown-editor/README.md",
+      "updatedAt": "2026-10-27T06:02:23.973Z",
       "verified": true
     },
     {
@@ -2744,6 +3249,75 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/presentation-studio#readme",
       "updatedAt": "2026-07-13T00:00:00.000Z",
+      "verified": true
+    },
+    {
+      "name": "@xpert-ai/plugin-spaces",
+      "packageName": "@xpert-ai/plugin-spaces",
+      "displayName": {
+        "en_US": "Spaces",
+        "zh_Hans": "协作空间"
+      },
+      "description": {
+        "en_US": "Shared AI-maintained documents, pages and files with Project content integration and scoped access.",
+        "zh_Hans": "供助手和用户协作维护文档、页面与文件，整合项目内容目录并遵循资源访问权限。"
+      },
+      "level": "system",
+      "category": "middleware",
+      "artifactNamespace": "spaces",
+      "keywords": [
+        "spaces",
+        "productivity",
+        "middleware"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/apps/spaces"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/spaces",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z\"/><path d=\"M7 11h10M7 15h6\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-spaces",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-spaces"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "types": [
+            "business-app",
+            "workbench-view",
+            "assistant-tool"
+          ],
+          "capabilities": [
+            "spaces"
+          ],
+          "runtime": {
+            "middlewareProviders": [
+              "spaces"
+            ],
+            "viewProviders": [
+              "spaces.views"
+            ]
+          },
+          "marketplace": {
+            "category": "productivity",
+            "subcategory": "middleware"
+          }
+        }
+      },
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/spaces/README.md",
+      "updatedAt": "2026-10-27T06:02:23.973Z",
       "verified": true
     },
     {
@@ -4042,6 +4616,60 @@
       "updatedAt": "2025-11-06T03:00:00.000Z"
     },
     {
+      "name": "@xpert-ai/plugin-agent-runtimes",
+      "packageName": "@xpert-ai/plugin-agent-runtimes",
+      "displayName": {
+        "en_US": "Agent Runtimes",
+        "zh_Hans": "编码代理运行时"
+      },
+      "description": {
+        "en_US": "Governed coding runtimes for Codex, Claude Code, OpenCode, Qwen Code, CodeBuddy, Kimi Code and Pi, with task status and cancellation.",
+        "zh_Hans": "统一调用 Codex、Claude Code、OpenCode、Qwen Code、CodeBuddy、Kimi Code 和 Pi，支持任务状态查询与取消。"
+      },
+      "level": "system",
+      "category": "integration",
+      "artifactNamespace": "agent_runtimes",
+      "keywords": [
+        "agent-runtimes",
+        "developer-tools",
+        "integration"
+      ],
+      "author": {
+        "name": "XpertAI",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/integrations/agent-runtimes"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/integrations/agent-runtimes",
+      "icon": {
+        "type": "svg",
+        "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"7\" width=\"16\" height=\"13\" rx=\"3\"/><path d=\"M12 3v4M1 12h3m16 0h3M8 16h8\"/><circle cx=\"9\" cy=\"12\" r=\"1\"/><circle cx=\"15\" cy=\"12\" r=\"1\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-agent-runtimes",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-agent-runtimes"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "developer-tools",
+            "subcategory": "integration"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/integrations/agent-runtimes/README.md",
+      "updatedAt": "2026-10-27T06:02:23.973Z",
+      "verified": true
+    },
+    {
       "name": "@xpert-ai/plugin-dingtalk-sso",
       "packageName": "@xpert-ai/plugin-dingtalk-sso",
       "displayName": {
@@ -5123,6 +5751,59 @@
       },
       "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/markitdown/README.md",
       "updatedAt": "2026-03-20T03:00:00.000Z"
+    },
+    {
+      "name": "@xpert-ai/plugin-mineru-cli",
+      "packageName": "@xpert-ai/plugin-mineru-cli",
+      "displayName": {
+        "en_US": "MinerU CLI",
+        "zh_Hans": "MinerU 文档解析"
+      },
+      "description": {
+        "en_US": "Run the MinerU CLI in a sandbox to convert documents to Markdown using platform-managed credentials.",
+        "zh_Hans": "通过沙箱中的 MinerU 命令行将文档转换为 Markdown，由平台管理所需凭据。"
+      },
+      "level": "organization",
+      "category": "middleware",
+      "keywords": [
+        "mineru-cli",
+        "productivity",
+        "middleware"
+      ],
+      "author": {
+        "name": "XpertAI Team",
+        "url": "https://xpertai.cn"
+      },
+      "repository": {
+        "type": "git",
+        "url": "https://github.com/xpert-ai/xpert-plugins.git",
+        "directory": "xpertai/middlewares/mineru-cli"
+      },
+      "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/middlewares/mineru-cli",
+      "icon": {
+        "type": "svg",
+        "value": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M19.7238 3.86898C19.7238 4.57597 19.1502 5.1491 18.4427 5.1491C17.7352 5.1491 17.1616 4.57597 17.1616 3.86898C17.1616 3.16199 17.7352 2.58887 18.4427 2.58887C19.1502 2.58887 19.7238 3.16199 19.7238 3.86898Z\" fill=\"#010101\"/><path d=\"M15.3681 5.1491C15.3681 5.85609 14.7945 6.42921 14.087 6.42921C13.3794 6.42921 12.8059 5.85609 12.8059 5.1491C12.8059 4.44211 13.3794 3.86898 14.087 3.86898C14.7945 3.86898 15.3681 4.44211 15.3681 5.1491Z\" fill=\"#010101\"/><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M8.05175 11.2368C8.05175 13.4605 9.14375 15.4293 10.8211 16.6371C11.8241 15.7389 12.4551 14.4345 12.4551 12.9828V9.39673C12.4551 8.85661 12.8197 8.38448 13.3426 8.24757L19.8924 6.53265C20.6459 6.33534 21.3826 6.90341 21.3826 7.6818L21.3826 12.0452C21.3826 17.2179 17.1861 21.4111 12.0095 21.4111L11.9942 21.4111C6.81758 21.4111 2.62109 17.2179 2.62109 12.0452V9.03388C2.62109 8.49175 2.9884 8.01839 3.51385 7.88336L6.56677 7.09882C7.31904 6.9055 8.05175 7.47318 8.05175 8.24934V11.2368ZM3.9798 12.0452C3.9798 13.8476 4.57565 15.5108 5.58124 16.849C6.04996 17.4728 6.7655 17.8884 7.54573 17.8884C8.28848 17.8884 8.9927 17.7236 9.62376 17.4286C7.83439 15.9596 6.69304 13.7314 6.69304 11.2368V8.46821L3.9798 9.16546V12.0452Z\" fill=\"#010101\"/></svg>"
+      },
+      "source": {
+        "type": "npm",
+        "packageName": "@xpert-ai/plugin-mineru-cli",
+        "url": "https://www.npmjs.com/package/@xpert-ai/plugin-mineru-cli"
+      },
+      "targetApps": [
+        "xpert"
+      ],
+      "targetAppMeta": {
+        "xpert": {
+          "marketplace": {
+            "category": "productivity",
+            "subcategory": "middleware"
+          }
+        }
+      },
+      "license": "AGPL-3.0",
+      "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/middlewares/mineru-cli/README.md",
+      "updatedAt": "2026-10-27T06:02:23.973Z",
+      "verified": true
     },
     {
       "name": "@xpert-ai/plugin-model-fallback",
