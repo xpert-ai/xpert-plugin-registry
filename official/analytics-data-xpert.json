@@ -1,0 +1,53 @@
+{
+  "name": "@xpert-ai/plugin-analytics-data-xpert",
+  "packageName": "@xpert-ai/plugin-analytics-data-xpert",
+  "displayName": {
+    "en_US": "data-xpert Analytics",
+    "zh_Hans": "data-xpert 本体分析"
+  },
+  "description": {
+    "en_US": "Governed analytics over authorized data-xpert ontology resources for dashboards and analytical datasets.",
+    "zh_Hans": "在授权范围内查询 data-xpert 本体资源，为实时看板与分析数据集提供数据。"
+  },
+  "level": "system",
+  "category": "tools",
+  "artifactNamespace": "analytics_data_xpert",
+  "keywords": [
+    "analytics-data-xpert",
+    "data-analytics",
+    "tools"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/tools/analytics-data-xpert"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-data-xpert",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3v18h18\"/><path d=\"m7 14 4-4 4 3 5-7\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-analytics-data-xpert",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-data-xpert"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "data-analytics",
+        "subcategory": "tools"
+      }
+    }
+  },
+  "license": "AGPL-3.0",
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-data-xpert/README.md",
+  "updatedAt": "2026-10-27T06:02:23.973Z"
+}

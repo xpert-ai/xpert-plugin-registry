@@ -1,0 +1,53 @@
+{
+  "name": "@xpert-ai/plugin-analytics-workspace-script",
+  "packageName": "@xpert-ai/plugin-analytics-workspace-script",
+  "displayName": {
+    "en_US": "Workspace Script Analytics",
+    "zh_Hans": "工作空间脚本分析"
+  },
+  "description": {
+    "en_US": "Python and JavaScript analytics over authorized Workspace files and data sources through governed Sandbox Jobs.",
+    "zh_Hans": "通过受控沙箱任务运行 Python 或 JavaScript，对授权工作空间文件和数据源进行分析。"
+  },
+  "level": "system",
+  "category": "tools",
+  "artifactNamespace": "workspace_script",
+  "keywords": [
+    "analytics-workspace-script",
+    "data-analytics",
+    "tools"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/tools/analytics-workspace-script"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-workspace-script",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"m8 9-3 3 3 3m8-6 3 3-3 3m-3-8-2 10\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-analytics-workspace-script",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-workspace-script"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "data-analytics",
+        "subcategory": "tools"
+      }
+    }
+  },
+  "license": "AGPL-3.0",
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-workspace-script/README.md",
+  "updatedAt": "2026-10-27T06:02:23.974Z"
+}

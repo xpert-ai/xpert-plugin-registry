@@ -1,0 +1,53 @@
+{
+  "name": "@xpert-ai/plugin-analytics-postgres",
+  "packageName": "@xpert-ai/plugin-analytics-postgres",
+  "displayName": {
+    "en_US": "PostgreSQL Analytics",
+    "zh_Hans": "PostgreSQL 数据分析"
+  },
+  "description": {
+    "en_US": "PostgreSQL analytics query provider using governed platform data sources.",
+    "zh_Hans": "使用平台管理的数据源执行 PostgreSQL 分析查询。"
+  },
+  "level": "system",
+  "category": "database",
+  "artifactNamespace": "analytics_postgres",
+  "keywords": [
+    "analytics-postgres",
+    "data-analytics",
+    "database"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/tools/analytics-postgres"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-postgres",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-analytics-postgres",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-postgres"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "data-analytics",
+        "subcategory": "database"
+      }
+    }
+  },
+  "license": "AGPL-3.0",
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-postgres/README.md",
+  "updatedAt": "2026-10-27T06:02:23.974Z"
+}

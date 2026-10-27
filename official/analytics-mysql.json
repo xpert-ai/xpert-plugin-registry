@@ -1,0 +1,53 @@
+{
+  "name": "@xpert-ai/plugin-analytics-mysql",
+  "packageName": "@xpert-ai/plugin-analytics-mysql",
+  "displayName": {
+    "en_US": "MySQL & Doris Analytics",
+    "zh_Hans": "MySQL 与 Doris 分析"
+  },
+  "description": {
+    "en_US": "Scoped MySQL and Apache Doris analytics query providers for dashboards and datasets.",
+    "zh_Hans": "基于授权数据源执行 MySQL 与 Apache Doris 分析查询，为看板和数据集提供数据。"
+  },
+  "level": "system",
+  "category": "database",
+  "artifactNamespace": "analytics_mysql",
+  "keywords": [
+    "analytics-mysql",
+    "data-analytics",
+    "database"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/tools/analytics-mysql"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-mysql",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><ellipse cx=\"12\" cy=\"5\" rx=\"8\" ry=\"3\"/><path d=\"M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-analytics-mysql",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-mysql"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "data-analytics",
+        "subcategory": "database"
+      }
+    }
+  },
+  "license": "AGPL-3.0",
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-mysql/README.md",
+  "updatedAt": "2026-10-27T06:02:23.974Z"
+}

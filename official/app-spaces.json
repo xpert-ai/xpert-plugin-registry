@@ -1,0 +1,68 @@
+{
+  "name": "@xpert-ai/plugin-spaces",
+  "packageName": "@xpert-ai/plugin-spaces",
+  "displayName": {
+    "en_US": "Spaces",
+    "zh_Hans": "协作空间"
+  },
+  "description": {
+    "en_US": "Shared AI-maintained documents, pages and files with Project content integration and scoped access.",
+    "zh_Hans": "供助手和用户协作维护文档、页面与文件，整合项目内容目录并遵循资源访问权限。"
+  },
+  "level": "system",
+  "category": "middleware",
+  "artifactNamespace": "spaces",
+  "keywords": [
+    "spaces",
+    "productivity",
+    "middleware"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/spaces"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/spaces",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 7V5a2 2 0 0 1 2-2h5l2 3h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z\"/><path d=\"M7 11h10M7 15h6\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-spaces",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-spaces"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "types": [
+        "business-app",
+        "workbench-view",
+        "assistant-tool"
+      ],
+      "capabilities": [
+        "spaces"
+      ],
+      "runtime": {
+        "middlewareProviders": [
+          "spaces"
+        ],
+        "viewProviders": [
+          "spaces.views"
+        ]
+      },
+      "marketplace": {
+        "category": "productivity",
+        "subcategory": "middleware"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/spaces/README.md",
+  "updatedAt": "2026-10-27T06:02:23.973Z"
+}

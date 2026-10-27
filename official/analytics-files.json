@@ -1,0 +1,53 @@
+{
+  "name": "@xpert-ai/plugin-analytics-files",
+  "packageName": "@xpert-ai/plugin-analytics-files",
+  "displayName": {
+    "en_US": "File Analytics",
+    "zh_Hans": "文件数据分析"
+  },
+  "description": {
+    "en_US": "Declarative CSV, JSON and XLSX queries over authorized Workspace files.",
+    "zh_Hans": "对已授权的工作空间 CSV、JSON 和 XLSX 文件执行声明式分析查询。"
+  },
+  "level": "system",
+  "category": "tools",
+  "artifactNamespace": "analytics_files",
+  "keywords": [
+    "analytics-files",
+    "data-analytics",
+    "tools"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/tools/analytics-files"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/tools/analytics-files",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z\"/><path d=\"M14 2v6h6M8 13h8M8 17h5\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-analytics-files",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-analytics-files"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "data-analytics",
+        "subcategory": "tools"
+      }
+    }
+  },
+  "license": "AGPL-3.0",
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/tools/analytics-files/README.md",
+  "updatedAt": "2026-10-27T06:02:23.974Z"
+}

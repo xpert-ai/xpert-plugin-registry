@@ -1,0 +1,53 @@
+{
+  "name": "@xpert-ai/plugin-agent-runtimes",
+  "packageName": "@xpert-ai/plugin-agent-runtimes",
+  "displayName": {
+    "en_US": "Agent Runtimes",
+    "zh_Hans": "编码代理运行时"
+  },
+  "description": {
+    "en_US": "Governed coding runtimes for Codex, Claude Code, OpenCode, Qwen Code, CodeBuddy, Kimi Code and Pi, with task status and cancellation.",
+    "zh_Hans": "统一调用 Codex、Claude Code、OpenCode、Qwen Code、CodeBuddy、Kimi Code 和 Pi，支持任务状态查询与取消。"
+  },
+  "level": "system",
+  "category": "integration",
+  "artifactNamespace": "agent_runtimes",
+  "keywords": [
+    "agent-runtimes",
+    "developer-tools",
+    "integration"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/integrations/agent-runtimes"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/integrations/agent-runtimes",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"4\" y=\"7\" width=\"16\" height=\"13\" rx=\"3\"/><path d=\"M12 3v4M1 12h3m16 0h3M8 16h8\"/><circle cx=\"9\" cy=\"12\" r=\"1\"/><circle cx=\"15\" cy=\"12\" r=\"1\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-agent-runtimes",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-agent-runtimes"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "developer-tools",
+        "subcategory": "integration"
+      }
+    }
+  },
+  "license": "AGPL-3.0",
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/integrations/agent-runtimes/README.md",
+  "updatedAt": "2026-10-27T06:02:23.973Z"
+}

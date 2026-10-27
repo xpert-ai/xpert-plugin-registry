@@ -1,0 +1,53 @@
+{
+  "name": "@xpert-ai/plugin-live-dashboard",
+  "packageName": "@xpert-ai/plugin-live-dashboard",
+  "displayName": {
+    "en_US": "Live Dashboard",
+    "zh_Hans": "实时看板"
+  },
+  "description": {
+    "en_US": "Versioned live dashboards over governed analytics sources, with previews, filters and fixed-version sharing.",
+    "zh_Hans": "基于授权分析数据创建实时看板，支持预览、筛选、版本管理与固定版本分享。"
+  },
+  "level": "system",
+  "category": "middleware",
+  "artifactNamespace": "live_dashboard",
+  "keywords": [
+    "live-dashboard",
+    "data-analytics",
+    "middleware"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/live-dashboard"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/live-dashboard",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 3v18h18\"/><path d=\"m7 14 4-4 4 3 5-7\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-live-dashboard",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-live-dashboard"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "marketplace": {
+        "category": "data-analytics",
+        "subcategory": "middleware"
+      }
+    }
+  },
+  "license": "AGPL-3.0",
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/live-dashboard/README.md",
+  "updatedAt": "2026-10-27T06:02:23.972Z"
+}

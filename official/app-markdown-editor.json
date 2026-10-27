@@ -1,0 +1,60 @@
+{
+  "name": "@xpert-ai/plugin-markdown-editor",
+  "packageName": "@xpert-ai/plugin-markdown-editor",
+  "displayName": {
+    "en_US": "Markdown Editor",
+    "zh_Hans": "Markdown 编辑器"
+  },
+  "description": {
+    "en_US": "Collaborative Tiptap Markdown editing backed by authorized Project files.",
+    "zh_Hans": "基于项目文件的 Tiptap Markdown 协作编辑器，提供实时协作与工作台编辑视图。"
+  },
+  "level": "system",
+  "category": "integration",
+  "artifactNamespace": "markdown_editor",
+  "keywords": [
+    "markdown-editor",
+    "productivity",
+    "integration"
+  ],
+  "author": {
+    "name": "XpertAI",
+    "url": "https://xpertai.cn"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xpert-ai/xpert-plugins.git",
+    "directory": "xpertai/apps/markdown-editor"
+  },
+  "homepage": "https://github.com/xpert-ai/xpert-plugins/tree/main/xpertai/apps/markdown-editor",
+  "icon": {
+    "type": "svg",
+    "value": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"16\" rx=\"2\"/><path d=\"M6 15V9l3 3 3-3v6m4-6v6m-2-2 2 2 2-2\"/></svg>"
+  },
+  "source": {
+    "type": "npm",
+    "packageName": "@xpert-ai/plugin-markdown-editor",
+    "url": "https://www.npmjs.com/package/@xpert-ai/plugin-markdown-editor"
+  },
+  "targetApps": [
+    "xpert"
+  ],
+  "targetAppMeta": {
+    "xpert": {
+      "types": [
+        "workbench-view"
+      ],
+      "runtime": {
+        "viewProviders": [
+          "markdown.views"
+        ]
+      },
+      "marketplace": {
+        "category": "productivity",
+        "subcategory": "integration"
+      }
+    }
+  },
+  "readme": "https://github.com/xpert-ai/xpert-plugins/blob/main/xpertai/apps/markdown-editor/README.md",
+  "updatedAt": "2026-10-27T06:02:23.973Z"
+}
